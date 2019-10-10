@@ -25,53 +25,55 @@ namespace ConsoleApp7
             b = Console.ReadLine();
             y = Convert.ToInt32(b);
 
-            for (int i = 0; i < 8; i++)
-            {
+            int abs1 = 0;
+            int abs2 = 0;
 
-                for(int j = 0; j < 8; j++)
+            String cadena = "";
+
+            for (int i = 1; i < 9; i++)
+            {
+                for (int j = 1; j < 9; j++)
                 {
 
-               
-                    if (i % 2 == 0 && (i != x - 1 && j != y - 1))
+                    abs1 = Math.Abs(x - i);
+                    abs2 = Math.Abs(y - j);
+
+                    if ((x != i || y != j) && (abs1 != abs2))
                     {
-                        if (j % 2 == 0)
+                        if (i % 2 == 0)
                         {
-                            Console.Write("N");
+                            if (j % 2 == 0)
+                            {
+                                cadena = cadena + "B";
+                            }
+                            else
+                            {
+                                cadena = cadena + "N";
+                            }
                         }
                         else
                         {
-                            Console.Write("B");
+                            if (j % 2 == 0)
+                            {
+                                cadena = cadena + "N";
+                            }
+                            else
+                            {
+                                cadena = cadena + "B";
+                            }
                         }
                     }
-                    else if ((i == x - 1 && j == y - 1))
+                    else if ((abs1 == abs2))
                     {
-
-                        Console.Write("*");
-
+                        cadena = cadena + "*";
                     }
-                    else
-                    {
-                        if (j % 2 == 0)
-                        {
-                            Console.Write("B");
-                        }
-                        else
-                        {
-                            Console.Write("N");
-                        }
-
-                    }
-
-                    x++;
-                    y++;
-
-                    
-
 
                 }
 
-                Console.WriteLine();
-                
+
+                Console.WriteLine(cadena);
+
+                cadena = "";
             }
 
 

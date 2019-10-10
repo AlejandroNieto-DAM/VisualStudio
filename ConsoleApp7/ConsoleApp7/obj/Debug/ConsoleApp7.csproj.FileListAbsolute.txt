@@ -5,3 +5,10 @@ C:\Users\2dam\Documents\Visual Studio\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleA
 C:\Users\2dam\Documents\Visual Studio\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.exe
 C:\Users\2dam\Documents\Visual Studio\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.pdb
 C:\Users\2dam\Documents\Visual Studio\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.csprojAssemblyReference.cache
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.exe
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.pdb
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.csprojAssemblyReference.cache
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.csproj.CoreCompileInputs.cache
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\ConsoleApp7\ConsoleApp7\bin\Debug\ConsoleApp7.exe.config
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\ConsoleApp7\ConsoleApp7\bin\Debug\ConsoleApp7.exe
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\ConsoleApp7\ConsoleApp7\bin\Debug\ConsoleApp7.pdb
