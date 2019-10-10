@@ -1,0 +1,6 @@
+C:\Users\2dam\Documents\Visual Studio\ConsoleApp4\ConsoleApp4\bin\Debug\ConsoleApp4.exe.config
+C:\Users\2dam\Documents\Visual Studio\ConsoleApp4\ConsoleApp4\bin\Debug\ConsoleApp4.exe
+C:\Users\2dam\Documents\Visual Studio\ConsoleApp4\ConsoleApp4\bin\Debug\ConsoleApp4.pdb
+C:\Users\2dam\Documents\Visual Studio\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.csproj.CoreCompileInputs.cache
+C:\Users\2dam\Documents\Visual Studio\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.exe
+C:\Users\2dam\Documents\Visual Studio\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.pdb
