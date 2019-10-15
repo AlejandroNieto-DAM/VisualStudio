@@ -1,0 +1,9 @@
+C:\Users\2dam\source\repos\BlocNotas\BlocNotas\bin\Debug\BlocNotas.exe.config
+C:\Users\2dam\source\repos\BlocNotas\BlocNotas\bin\Debug\BlocNotas.exe
+C:\Users\2dam\source\repos\BlocNotas\BlocNotas\bin\Debug\BlocNotas.pdb
+C:\Users\2dam\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.Form1.resources
+C:\Users\2dam\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.Properties.Resources.resources
+C:\Users\2dam\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.csproj.GenerateResource.cache
+C:\Users\2dam\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.csproj.CoreCompileInputs.cache
+C:\Users\2dam\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.exe
+C:\Users\2dam\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.pdb
