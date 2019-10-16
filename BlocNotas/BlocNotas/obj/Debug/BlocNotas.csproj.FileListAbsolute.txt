@@ -7,3 +7,4 @@ C:\Users\2dam\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.csproj.Genera
 C:\Users\2dam\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.csproj.CoreCompileInputs.cache
 C:\Users\2dam\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.exe
 C:\Users\2dam\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.pdb
+C:\Users\2dam\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.csprojAssemblyReference.cache
