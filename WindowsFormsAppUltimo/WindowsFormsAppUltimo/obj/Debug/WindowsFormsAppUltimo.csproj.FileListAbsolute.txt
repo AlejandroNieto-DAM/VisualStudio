@@ -1,0 +1,10 @@
+C:\Users\2dam\source\repos\WindowsFormsAppUltimo\WindowsFormsAppUltimo\bin\Debug\WindowsFormsAppUltimo.exe.config
+C:\Users\2dam\source\repos\WindowsFormsAppUltimo\WindowsFormsAppUltimo\bin\Debug\WindowsFormsAppUltimo.exe
+C:\Users\2dam\source\repos\WindowsFormsAppUltimo\WindowsFormsAppUltimo\bin\Debug\WindowsFormsAppUltimo.pdb
+C:\Users\2dam\source\repos\WindowsFormsAppUltimo\WindowsFormsAppUltimo\obj\Debug\WindowsFormsAppUltimo.csprojAssemblyReference.cache
+C:\Users\2dam\source\repos\WindowsFormsAppUltimo\WindowsFormsAppUltimo\obj\Debug\WindowsFormsAppUltimo.Form1.resources
+C:\Users\2dam\source\repos\WindowsFormsAppUltimo\WindowsFormsAppUltimo\obj\Debug\WindowsFormsAppUltimo.Properties.Resources.resources
+C:\Users\2dam\source\repos\WindowsFormsAppUltimo\WindowsFormsAppUltimo\obj\Debug\WindowsFormsAppUltimo.csproj.GenerateResource.cache
+C:\Users\2dam\source\repos\WindowsFormsAppUltimo\WindowsFormsAppUltimo\obj\Debug\WindowsFormsAppUltimo.csproj.CoreCompileInputs.cache
+C:\Users\2dam\source\repos\WindowsFormsAppUltimo\WindowsFormsAppUltimo\obj\Debug\WindowsFormsAppUltimo.exe
+C:\Users\2dam\source\repos\WindowsFormsAppUltimo\WindowsFormsAppUltimo\obj\Debug\WindowsFormsAppUltimo.pdb
