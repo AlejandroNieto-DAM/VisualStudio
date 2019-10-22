@@ -77,6 +77,8 @@ namespace WindowsFormsAppUltimo
         {
             String selected = textBox6.Text;
 
+            Console.WriteLine("eyeye");
+
             double devolucion = 0.0;
 
 
