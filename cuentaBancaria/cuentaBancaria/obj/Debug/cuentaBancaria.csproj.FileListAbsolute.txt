@@ -5,3 +5,10 @@ C:\Users\2dam\source\repos\cuentaBancaria\cuentaBancaria\obj\Debug\cuentaBancari
 C:\Users\2dam\source\repos\cuentaBancaria\cuentaBancaria\obj\Debug\cuentaBancaria.csproj.CoreCompileInputs.cache
 C:\Users\2dam\source\repos\cuentaBancaria\cuentaBancaria\obj\Debug\cuentaBancaria.exe
 C:\Users\2dam\source\repos\cuentaBancaria\cuentaBancaria\obj\Debug\cuentaBancaria.pdb
+C:\Users\2dam\Documents\Visual Studio\cuentaBancaria\cuentaBancaria\bin\Debug\cuentaBancaria.exe.config
+C:\Users\2dam\Documents\Visual Studio\cuentaBancaria\cuentaBancaria\bin\Debug\cuentaBancaria.exe
+C:\Users\2dam\Documents\Visual Studio\cuentaBancaria\cuentaBancaria\bin\Debug\cuentaBancaria.pdb
+C:\Users\2dam\Documents\Visual Studio\cuentaBancaria\cuentaBancaria\obj\Debug\cuentaBancaria.csprojAssemblyReference.cache
+C:\Users\2dam\Documents\Visual Studio\cuentaBancaria\cuentaBancaria\obj\Debug\cuentaBancaria.csproj.CoreCompileInputs.cache
+C:\Users\2dam\Documents\Visual Studio\cuentaBancaria\cuentaBancaria\obj\Debug\cuentaBancaria.exe
+C:\Users\2dam\Documents\Visual Studio\cuentaBancaria\cuentaBancaria\obj\Debug\cuentaBancaria.pdb
