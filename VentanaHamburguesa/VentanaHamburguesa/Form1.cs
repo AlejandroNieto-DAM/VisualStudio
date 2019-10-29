@@ -15,6 +15,9 @@ namespace VentanaHamburguesa
         public Form1()
         {
             InitializeComponent();
+            Sidepanel.Height = button1.Height;
+            Sidepanel.Top = button1.Top;
+            firstCustomControl1.BringToFront();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -24,7 +27,21 @@ namespace VentanaHamburguesa
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Sidepanel.Height = button1.Height;
+            Sidepanel.Top = button1.Top;
+            firstCustomControl1.BringToFront();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Sidepanel.Height = button2.Height;
+            Sidepanel.Top = button2.Top;
+            mySecondCustomControl1.BringToFront();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
