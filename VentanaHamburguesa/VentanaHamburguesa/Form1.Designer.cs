@@ -67,7 +67,7 @@
             button14.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button14.ForeColor = System.Drawing.Color.White;
             button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button14.Location = new System.Drawing.Point(0, 449);
+            button14.Location = new System.Drawing.Point(0, 525);
             button14.Name = "button14";
             button14.Size = new System.Drawing.Size(42, 38);
             button14.TabIndex = 16;
@@ -113,7 +113,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(167, 45);
             this.button7.TabIndex = 9;
-            this.button7.Text = "Customers";
+            this.button7.Text = "Clientes";
             this.button7.UseVisualStyleBackColor = false;
             // 
             // button6
@@ -129,7 +129,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(167, 45);
             this.button6.TabIndex = 8;
-            this.button6.Text = "Payment ";
+            this.button6.Text = "Pago";
             this.button6.UseVisualStyleBackColor = false;
             // 
             // button5
@@ -145,7 +145,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(164, 45);
             this.button5.TabIndex = 7;
-            this.button5.Text = "Take Away";
+            this.button5.Text = "    Para Llevar";
             this.button5.UseVisualStyleBackColor = false;
             // 
             // button4
@@ -161,7 +161,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(164, 45);
             this.button4.TabIndex = 6;
-            this.button4.Text = "Delivery";
+            this.button4.Text = "Envios";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // button3
@@ -177,7 +177,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(164, 45);
             this.button3.TabIndex = 5;
-            this.button3.Text = "Collection";
+            this.button3.Text = "Carta";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
@@ -193,7 +193,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(164, 45);
             this.button2.TabIndex = 4;
-            this.button2.Text = "Eat-In";
+            this.button2.Text = "       Comer Dentro";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -210,7 +210,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(164, 45);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Home";
+            this.button1.Text = "        Pagina Principal";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

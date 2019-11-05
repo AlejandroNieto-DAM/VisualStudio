@@ -57,9 +57,10 @@
             this.label3.ForeColor = System.Drawing.Color.Gold;
             this.label3.Location = new System.Drawing.Point(94, 18);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 25);
+            this.label3.Size = new System.Drawing.Size(49, 25);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Only";
+            this.label3.Text = "Solo";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -103,7 +104,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(261, 50);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Order Now";
+            this.button1.Text = "Pedir Ahora";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
