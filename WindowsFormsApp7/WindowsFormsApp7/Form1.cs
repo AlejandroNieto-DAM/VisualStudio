@@ -93,6 +93,12 @@ namespace WindowsFormsApp7
                         pictureBox6.Visible = true;
                         button2.Visible = true;
                         button2.Enabled = true;
+                        label5.Text = "";
+                        for (int i = 0; i < palabraSecreta.Length - 1; i++)
+                        {
+                            label5.Text += palabraSecreta[i];
+                        }
+                        label5.Text += palabraSecreta[palabraSecreta.Length - 1];
                     }
                     else if (intentos == 4)
                     {
@@ -121,7 +127,7 @@ namespace WindowsFormsApp7
             String palabraActualizada = label5.Text.Replace(" ", "");
             String palabraAct = "";
          
-            Boolean encontrada = false;
+            
             int contador = 0;
             foreach (Char l in palabraActualizada)
             {
@@ -167,19 +173,6 @@ namespace WindowsFormsApp7
     
         }
 
-        public String hacerPalabra(String palabra)
-        {
-            String palabra2 = "";
-            foreach (Char l in palabra)
-            {
-
-                palabra2 += l + "_";
-
-
-            }
-            
-            return palabra;
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -224,6 +217,11 @@ namespace WindowsFormsApp7
             Form2 ventanaInicial = new Form2();
             this.Visible = false;
             ventanaInicial.Visible = true;
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

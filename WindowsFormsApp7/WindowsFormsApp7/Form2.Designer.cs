@@ -32,6 +32,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loginToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -78,6 +83,39 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.loginToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(339, 24);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // loginToolStripMenuItem
+            // 
+            this.loginToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.loginToolStripMenuItem1,
+            this.registroToolStripMenuItem});
+            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.loginToolStripMenuItem.Text = "Login..";
+            // 
+            // loginToolStripMenuItem1
+            // 
+            this.loginToolStripMenuItem1.Name = "loginToolStripMenuItem1";
+            this.loginToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.loginToolStripMenuItem1.Text = "Login.";
+            this.loginToolStripMenuItem1.Click += new System.EventHandler(this.loginToolStripMenuItem1_Click);
+            // 
+            // registroToolStripMenuItem
+            // 
+            this.registroToolStripMenuItem.Name = "registroToolStripMenuItem";
+            this.registroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registroToolStripMenuItem.Text = "Registro.";
+            this.registroToolStripMenuItem.Click += new System.EventHandler(this.registroToolStripMenuItem_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -87,9 +125,15 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form2";
             this.Text = "Ahorcado - Alejandro Nieto";
+            this.Load += new System.EventHandler(this.Form2_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -99,5 +143,9 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem registroToolStripMenuItem;
     }
 }

@@ -13,14 +13,15 @@ namespace WindowsFormsApp7
 {
     public partial class Form2 : Form
     {
-
+        public static ArrayList personas;
      
-        ArrayList palabras;
+        public static ArrayList palabras;
         public Form2()
         {
             InitializeComponent();
             button1.Enabled = false;
             palabras = new ArrayList();
+            personas = new ArrayList();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -34,17 +35,18 @@ namespace WindowsFormsApp7
         private void button2_Click(object sender, EventArgs e)
         {
 
-            palabras.Add("hola");
-            palabras.Add("pepe");
-            palabras.Add("jarra");
-            palabras.Add("willy");
-            palabras.Add("raul");
+            //palabras.Add("hola");
+            //palabras.Add("pepe");
+            //palabras.Add("jarra");
+            //palabras.Add("willy");
+            //palabras.Add("raul");
 
        
             button1.Enabled = true;
 
-            button3.Enabled = false;
-            button4.Enabled = false;
+            button2.BackColor = Color.Green;
+            button3.BackColor = button1.BackColor;
+            button4.BackColor = button1.BackColor;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -56,9 +58,9 @@ namespace WindowsFormsApp7
             palabras.Add("botella");
 
 
-            button2.Enabled = false;
-            button4.Enabled = false;
-
+            button3.BackColor = Color.Green;
+            button2.BackColor = button1.BackColor;
+            button4.BackColor = button1.BackColor;
             button1.Enabled = true;
         }
 
@@ -71,10 +73,30 @@ namespace WindowsFormsApp7
             palabras.Add("dietilamonico");
 
 
-            button2.Enabled = false;
-            button3.Enabled = false;
+            button4.BackColor = Color.Green;
+            button3.BackColor = button1.BackColor;
+            button2.BackColor = button1.BackColor;
 
             button1.Enabled = true;
+        }
+
+        private void loginToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Login ventanaLogin = new Login();
+            ventanaLogin.Visible = true;
+            this.Visible = false;
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            personas.Add(new Persona("admin", "admin"));
+        }
+
+        private void registroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registro ventanaRegistro = new Registro();
+            this.Visible = false;
+            ventanaRegistro.Visible = true;
         }
     }
 }

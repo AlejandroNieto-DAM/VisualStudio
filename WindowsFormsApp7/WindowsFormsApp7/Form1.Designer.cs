@@ -43,11 +43,15 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.juegoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -190,6 +194,31 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.juegoToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(787, 24);
+            this.menuStrip1.TabIndex = 15;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // juegoToolStripMenuItem
+            // 
+            this.juegoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.salirToolStripMenuItem});
+            this.juegoToolStripMenuItem.Name = "juegoToolStripMenuItem";
+            this.juegoToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.juegoToolStripMenuItem.Text = "Juego...";
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Text = "Salir...";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -210,6 +239,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "VentanaJuego";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -218,6 +249,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,6 +272,9 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem juegoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
     }
 }
 
