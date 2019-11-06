@@ -28,7 +28,7 @@ namespace WindowsFormsApp7
             palabraSecreta = "Hola";
             for (int i = 0; i < palabraSecreta.Length - 1; i++)
             {
-                label5.Text += "_";
+                label5.Text += "_ ";
             }
             label5.Text += "_";
         }
@@ -56,7 +56,7 @@ namespace WindowsFormsApp7
                     if (l.Equals(letra))
                     {
                         encontrado = true;
-                        label6.Text = "La letra esta en la palabra!";
+                        
                     }
                 }
 
@@ -73,6 +73,23 @@ namespace WindowsFormsApp7
                     {
                         label6.Text = "Game over!";
                         button1.Enabled = false;
+                        pictureBox6.Visible = true;
+                    }
+                    else if (intentos == 4)
+                    {
+                        pictureBox1.Visible = true;
+                    }
+                    else if (intentos == 3)
+                    {
+                        pictureBox2.Visible = true;
+                    }
+                    else if (intentos == 2)
+                    {
+                        pictureBox3.Visible = true;
+                    }
+                    else if (intentos == 1)
+                    {
+                        pictureBox4.Visible = true;
                     }
                 }
             }
@@ -82,41 +99,43 @@ namespace WindowsFormsApp7
 
         public void tratarLetra(Char letra)
         {
-            String palabraActualizada = label5.Text;
+            String palabraActualizada = label5.Text.Replace(" ", "");
             String palabraAct = "";
          
             Boolean encontrada = false;
-
+            int contador = 0;
             foreach (Char l in palabraActualizada)
             {
-                if (l.Equals('_'))
-                {
-                    
-                    foreach (Char l2 in palabraSecreta)
-                    {
-                        if (l2.Equals(letra))
-                        {
-                            palabraAct += l2;
-                        }
-                        else
-                        {
-                            palabraAct += "_";
-                        }
-                    }
-                }
-                else
+                if (!l.Equals('_'))
                 {
                     palabraAct += l;
                 }
+                else if(letra.Equals(palabraSecreta[contador]))
+                {
+
+                    palabraAct += letra;
+                    
+                }
+                else
+                {
+                    palabraAct += "_";
+                }
+
+                contador++;
             }
 
             label5.Text = "";
-            label5.Text = palabraAct;
             
+            for(int i = 0; i < palabraActualizada.Length - 1; i++)
+            {
+                label5.Text += palabraAct[i] + " ";
+            }
 
-          //  label5.Text = this.hacerPalabra(palabraActualizada);
+            label5.Text += palabraAct[palabraAct.Length - 1].ToString();
 
-            if (palabraActualizada.Equals(palabraSecreta))
+
+
+            if (palabraAct.Equals(palabraSecreta))
             {
                     
                 label6.Text = "Wnner!!";
@@ -146,6 +165,36 @@ namespace WindowsFormsApp7
             Char letra = Convert.ToChar(textBox1.Text);
 
             this.comprobarLetra(letra);
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }
