@@ -17,15 +17,32 @@ namespace WindowsFormsApp7
         private String palabraSecreta = "";
         private int intentos = 5;
         ArrayList letrasUsadas = new ArrayList();
+        ArrayList palabras;
 
-        public Form1()
+        public Form1(ArrayList palabras)
         {
             InitializeComponent();
+            this.palabras = palabras;
+            button2.Visible = false;
+            button2.Enabled = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            palabraSecreta = "Hola";
+
+            Random rnd = new Random();
+            int numeroAleatorio = rnd.Next(palabras.Count - 1);
+
+            int contador = 0;
+            foreach(String i in palabras){
+                if(contador == numeroAleatorio)
+                {
+                    palabraSecreta = i;
+                }
+
+                contador++;
+            }
+
             for (int i = 0; i < palabraSecreta.Length - 1; i++)
             {
                 label5.Text += "_ ";
@@ -74,6 +91,8 @@ namespace WindowsFormsApp7
                         label6.Text = "Game over!";
                         button1.Enabled = false;
                         pictureBox6.Visible = true;
+                        button2.Visible = true;
+                        button2.Enabled = true;
                     }
                     else if (intentos == 4)
                     {
@@ -138,8 +157,10 @@ namespace WindowsFormsApp7
             if (palabraAct.Equals(palabraSecreta))
             {
                     
-                label6.Text = "Wnner!!";
+                label6.Text = "Winner!!";
                 button1.Enabled = false;
+                button2.Visible = true;
+                button2.Enabled = true;
 
             }
             
@@ -163,9 +184,9 @@ namespace WindowsFormsApp7
         private void button1_Click(object sender, EventArgs e)
         {
             Char letra = Convert.ToChar(textBox1.Text);
-
+            
             this.comprobarLetra(letra);
-
+            
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -196,6 +217,13 @@ namespace WindowsFormsApp7
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 ventanaInicial = new Form2();
+            this.Visible = false;
+            ventanaInicial.Visible = true;
         }
     }
 }
