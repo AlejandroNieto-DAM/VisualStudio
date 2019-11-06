@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,8 +20,11 @@ namespace WindowsFormsApp7
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             String palabra = textBox1.Text;
+            ArrayList palabras = Form2.palabras;
             Form2 ventanaInicio = new Form2();
+            Form2.palabras = palabras;
             Form2.palabras.Add(palabra);
             this.Visible = false;
             ventanaInicio.Visible = true;

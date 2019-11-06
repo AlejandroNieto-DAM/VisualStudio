@@ -214,7 +214,12 @@ namespace WindowsFormsApp7
 
         private void button2_Click(object sender, EventArgs e)
         {
+            ArrayList palabras = Form2.palabras;
+            ArrayList personas = Form2.personas;
+
             Form2 ventanaInicial = new Form2();
+            Form2.palabras = palabras;
+            Form2.personas = personas;
             this.Visible = false;
             ventanaInicial.Visible = true;
         }
