@@ -22,9 +22,11 @@ namespace WindowsFormsApp7
         {
 
             String palabra = textBox1.Text;
+            ArrayList personas = Form2.personas;
             ArrayList palabras = Form2.palabras;
             Form2 ventanaInicio = new Form2();
             Form2.palabras = palabras;
+            Form2.personas = personas;
             Form2.palabras.Add(palabra);
             this.Visible = false;
             ventanaInicio.Visible = true;

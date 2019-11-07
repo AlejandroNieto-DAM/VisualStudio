@@ -36,7 +36,7 @@ namespace WindowsFormsApp7
         {
 
             //palabras.Add("hola");
-            //palabras.Add("pepe");
+            palabras.Add("pepe");
             //palabras.Add("jarra");
             //palabras.Add("willy");
             //palabras.Add("raul");

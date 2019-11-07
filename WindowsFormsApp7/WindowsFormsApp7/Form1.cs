@@ -176,9 +176,18 @@ namespace WindowsFormsApp7
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Char letra = Convert.ToChar(textBox1.Text);
+
+            String l = textBox1.Text;
             
-            this.comprobarLetra(letra);
+
+            if(l.Length == 1)
+            {
+               
+                Char letra = Convert.ToChar(l);
+
+                this.comprobarLetra(letra);
+            }
+            
             
         }
 
