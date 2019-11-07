@@ -35,13 +35,15 @@ namespace WindowsFormsApp7
         private void button2_Click(object sender, EventArgs e)
         {
 
-            //palabras.Add("hola");
-            palabras.Add("pepe");
-            //palabras.Add("jarra");
-            //palabras.Add("willy");
-            //palabras.Add("raul");
+            palabras.Add("alguacil");
+            palabras.Add("diazepam");
+            palabras.Add("destornillador");
+            palabras.Add("diclofenaco");
+            palabras.Add("dietilamonico");
+            palabras.Add("exhumacion");
+            palabras.Add("aletargadamente");
 
-       
+
             button1.Enabled = true;
 
             button2.BackColor = Color.Green;
@@ -52,10 +54,13 @@ namespace WindowsFormsApp7
         private void button3_Click(object sender, EventArgs e)
         {
             palabras.Add("camion");
+
             palabras.Add("teclado");
             palabras.Add("monitor");
             palabras.Add("portatil");
             palabras.Add("botella");
+            palabras.Add("programar");
+            palabras.Add("rotulador");
 
 
             button3.BackColor = Color.Green;
@@ -66,11 +71,14 @@ namespace WindowsFormsApp7
 
         private void button4_Click(object sender, EventArgs e)
         {
-            palabras.Add("alguacil");
-            palabras.Add("diazepam");
-            palabras.Add("destornillador");
-            palabras.Add("diclofenaco");
-            palabras.Add("dietilamonico");
+            
+
+            palabras.Add("hola");
+            palabras.Add("pepe");
+            palabras.Add("jarra");
+            palabras.Add("willy");
+            palabras.Add("ñu");
+            palabras.Add("te");
 
 
             button4.BackColor = Color.Green;
