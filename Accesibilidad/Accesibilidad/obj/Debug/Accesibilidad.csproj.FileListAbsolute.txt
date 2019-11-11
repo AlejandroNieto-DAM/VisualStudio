@@ -1,0 +1,10 @@
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\Accesibilidad\Accesibilidad\bin\Debug\Accesibilidad.exe.config
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\Accesibilidad\Accesibilidad\bin\Debug\Accesibilidad.exe
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\Accesibilidad\Accesibilidad\bin\Debug\Accesibilidad.pdb
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\Accesibilidad\Accesibilidad\obj\Debug\Accesibilidad.csprojAssemblyReference.cache
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\Accesibilidad\Accesibilidad\obj\Debug\Accesibilidad.Form1.resources
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\Accesibilidad\Accesibilidad\obj\Debug\Accesibilidad.Properties.Resources.resources
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\Accesibilidad\Accesibilidad\obj\Debug\Accesibilidad.csproj.GenerateResource.cache
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\Accesibilidad\Accesibilidad\obj\Debug\Accesibilidad.csproj.CoreCompileInputs.cache
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\Accesibilidad\Accesibilidad\obj\Debug\Accesibilidad.exe
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\Accesibilidad\Accesibilidad\obj\Debug\Accesibilidad.pdb

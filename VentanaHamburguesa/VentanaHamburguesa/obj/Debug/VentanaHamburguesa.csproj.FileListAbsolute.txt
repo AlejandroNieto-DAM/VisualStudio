@@ -1,0 +1,11 @@
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\VentanaHamburguesa\VentanaHamburguesa\bin\Debug\VentanaHamburguesa.exe.config
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\VentanaHamburguesa\VentanaHamburguesa\bin\Debug\VentanaHamburguesa.exe
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\VentanaHamburguesa\VentanaHamburguesa\bin\Debug\VentanaHamburguesa.pdb
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\VentanaHamburguesa\VentanaHamburguesa\obj\Debug\VentanaHamburguesa.FirstCustomControl.resources
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\VentanaHamburguesa\VentanaHamburguesa\obj\Debug\VentanaHamburguesa.Form1.resources
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\VentanaHamburguesa\VentanaHamburguesa\obj\Debug\VentanaHamburguesa.Properties.Resources.resources
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\VentanaHamburguesa\VentanaHamburguesa\obj\Debug\VentanaHamburguesa.csproj.GenerateResource.cache
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\VentanaHamburguesa\VentanaHamburguesa\obj\Debug\VentanaHamburguesa.csproj.CoreCompileInputs.cache
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\VentanaHamburguesa\VentanaHamburguesa\obj\Debug\VentanaHamburguesa.exe
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\VentanaHamburguesa\VentanaHamburguesa\obj\Debug\VentanaHamburguesa.pdb
+C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\VentanaHamburguesa\VentanaHamburguesa\obj\Debug\VentanaHamburguesa.MySecondCustomControl.resources
