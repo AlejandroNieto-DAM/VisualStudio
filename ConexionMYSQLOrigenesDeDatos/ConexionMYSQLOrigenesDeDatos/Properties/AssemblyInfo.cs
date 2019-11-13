@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("MySQLConexionID")]
+[assembly: AssemblyTitle("ConexionMYSQLOrigenesDeDatos")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MySQLConexionID")]
+[assembly: AssemblyProduct("ConexionMYSQLOrigenesDeDatos")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("33a980e8-4c88-453a-ba47-e1f42fddf8d3")]
+[assembly: Guid("41500b86-1d9a-42ef-bdf4-a934944a5e76")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //

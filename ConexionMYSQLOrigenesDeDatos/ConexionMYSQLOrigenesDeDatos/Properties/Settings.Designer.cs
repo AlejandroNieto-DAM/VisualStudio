@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MySQLConexionID.Properties {
+namespace ConexionMYSQLOrigenesDeDatos.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -26,10 +26,10 @@ namespace MySQLConexionID.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;database=desarrollointf")]
-        public string desarrollointfConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;database=coche")]
+        public string cocheConnectionString {
             get {
-                return ((string)(this["desarrollointfConnectionString"]));
+                return ((string)(this["cocheConnectionString"]));
             }
         }
     }
