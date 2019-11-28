@@ -30,6 +30,18 @@ namespace ConexionMYSQLOrigenesDeDatos
             // TODO: esta línea de código carga datos en la tabla 'cocheDataSet.coche' Puede moverla o quitarla según sea necesario.
             this.cocheTableAdapter.Fill(this.cocheDataSet.coche);
 
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 estoEsMiForm = new Form1();
+            Object estoEsMiReport = new CachedCrystalReport2();
+            System.Data.Odbc.OdbcDataAdapter adaptador = new System.Data.Odbc.OdbcDataAdapter("SELECT * FROM coches", );
+            DataSet dt = new DataSet();
+            adaptador.Fill(dt);
+            estoEsMiForm.Show();
+              
         }
     }
 }

@@ -29,31 +29,35 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.Label matriculaLabel;
             System.Windows.Forms.Label marcaLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.cocheDataSet = new ConexionMYSQLOrigenesDeDatos.cocheDataSet();
             this.cocheBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cocheTableAdapter = new ConexionMYSQLOrigenesDeDatos.cocheDataSetTableAdapters.cocheTableAdapter();
             this.tableAdapterManager = new ConexionMYSQLOrigenesDeDatos.cocheDataSetTableAdapters.TableAdapterManager();
             this.cocheBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.cocheBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.cocheDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.matriculaTextBox = new System.Windows.Forms.TextBox();
             this.marcaTextBox = new System.Windows.Forms.TextBox();
+            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.CrystalReport22 = new ConexionMYSQLOrigenesDeDatos.CrystalReport2();
+            this.CrystalReport21 = new ConexionMYSQLOrigenesDeDatos.CrystalReport2();
+            this.button1 = new System.Windows.Forms.Button();
             matriculaLabel = new System.Windows.Forms.Label();
             marcaLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cocheDataSet)).BeginInit();
@@ -62,6 +66,24 @@
             this.cocheBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cocheDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // matriculaLabel
+            // 
+            matriculaLabel.AutoSize = true;
+            matriculaLabel.Location = new System.Drawing.Point(33, 81);
+            matriculaLabel.Name = "matriculaLabel";
+            matriculaLabel.Size = new System.Drawing.Size(52, 13);
+            matriculaLabel.TabIndex = 2;
+            matriculaLabel.Text = "matricula:";
+            // 
+            // marcaLabel
+            // 
+            marcaLabel.AutoSize = true;
+            marcaLabel.Location = new System.Drawing.Point(33, 107);
+            marcaLabel.Name = "marcaLabel";
+            marcaLabel.Size = new System.Drawing.Size(39, 13);
+            marcaLabel.TabIndex = 4;
+            marcaLabel.Text = "marca:";
             // 
             // cocheDataSet
             // 
@@ -109,9 +131,34 @@
             this.cocheBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.cocheBindingNavigator.Name = "cocheBindingNavigator";
             this.cocheBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.cocheBindingNavigator.Size = new System.Drawing.Size(345, 25);
+            this.cocheBindingNavigator.Size = new System.Drawing.Size(892, 25);
             this.cocheBindingNavigator.TabIndex = 0;
             this.cocheBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -145,17 +192,10 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 15);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -163,7 +203,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Mover siguiente";
             // 
             // bindingNavigatorMoveLastItem
@@ -172,38 +212,20 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Mover último";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // cocheBindingNavigatorSaveItem
             // 
             this.cocheBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.cocheBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("cocheBindingNavigatorSaveItem.Image")));
             this.cocheBindingNavigatorSaveItem.Name = "cocheBindingNavigatorSaveItem";
-            this.cocheBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.cocheBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.cocheBindingNavigatorSaveItem.Text = "Guardar datos";
             this.cocheBindingNavigatorSaveItem.Click += new System.EventHandler(this.cocheBindingNavigatorSaveItem_Click);
             // 
@@ -232,15 +254,6 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "marca";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // matriculaLabel
-            // 
-            matriculaLabel.AutoSize = true;
-            matriculaLabel.Location = new System.Drawing.Point(33, 81);
-            matriculaLabel.Name = "matriculaLabel";
-            matriculaLabel.Size = new System.Drawing.Size(52, 13);
-            matriculaLabel.TabIndex = 2;
-            matriculaLabel.Text = "matricula:";
-            // 
             // matriculaTextBox
             // 
             this.matriculaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cocheBindingSource, "matricula", true));
@@ -248,15 +261,6 @@
             this.matriculaTextBox.Name = "matriculaTextBox";
             this.matriculaTextBox.Size = new System.Drawing.Size(100, 20);
             this.matriculaTextBox.TabIndex = 3;
-            // 
-            // marcaLabel
-            // 
-            marcaLabel.AutoSize = true;
-            marcaLabel.Location = new System.Drawing.Point(33, 107);
-            marcaLabel.Name = "marcaLabel";
-            marcaLabel.Size = new System.Drawing.Size(39, 13);
-            marcaLabel.TabIndex = 4;
-            marcaLabel.Text = "marca:";
             // 
             // marcaTextBox
             // 
@@ -266,11 +270,34 @@
             this.marcaTextBox.Size = new System.Drawing.Size(100, 20);
             this.marcaTextBox.TabIndex = 5;
             // 
+            // crystalReportViewer1
+            // 
+            this.crystalReportViewer1.ActiveViewIndex = 0;
+            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crystalReportViewer1.Location = new System.Drawing.Point(389, 12);
+            this.crystalReportViewer1.Name = "crystalReportViewer1";
+            this.crystalReportViewer1.ReportSource = this.CrystalReport22;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(491, 474);
+            this.crystalReportViewer1.TabIndex = 6;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(246, 71);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(345, 450);
+            this.ClientSize = new System.Drawing.Size(892, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(matriculaLabel);
             this.Controls.Add(this.matriculaTextBox);
             this.Controls.Add(marcaLabel);
@@ -315,6 +342,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.TextBox matriculaTextBox;
         private System.Windows.Forms.TextBox marcaTextBox;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private CrystalReport2 CrystalReport21;
+        private CrystalReport2 CrystalReport22;
+        private System.Windows.Forms.Button button1;
     }
 }
 
