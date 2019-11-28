@@ -43,6 +43,7 @@
             this.crystalReportViewer1.ReportSource = this.reportEjercicio11;
             this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
             this.crystalReportViewer1.TabIndex = 0;
+            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
             // Form1
             // 
@@ -51,7 +52,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Idioms_Alejandro_Nieto";
             this.ResumeLayout(false);
 
         }
