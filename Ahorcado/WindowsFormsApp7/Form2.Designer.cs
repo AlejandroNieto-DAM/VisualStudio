@@ -126,10 +126,12 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
+            this.HelpButton = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form2";
             this.Text = "Ahorcado - Alejandro Nieto";
             this.Load += new System.EventHandler(this.Form2_Load);
+            this.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.Form2_HelpRequested_1);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

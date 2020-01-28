@@ -106,5 +106,13 @@ namespace WindowsFormsApp7
             this.Visible = false;
             ventanaRegistro.Visible = true;
         }
+
+        
+
+        private void Form2_HelpRequested_1(object sender, HelpEventArgs hlpevent)
+        {
+            Help.ShowHelp(this, "C:/Users/2dam/Documents/HelpNDoc/Output/Crear documentación chm/Titulo de este proyecto de ayuda.chm", "C:/Users/2dam/Documents/HelpNDoc/Output/Crear documentación html/Titulo de este proyecto de ayuda.html");
+
+        }
     }
 }

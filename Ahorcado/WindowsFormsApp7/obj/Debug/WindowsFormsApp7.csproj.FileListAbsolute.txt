@@ -26,3 +26,22 @@ C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\Ahorcado\WindowsFormsApp7\obj
 C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\Ahorcado\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.CoreCompileInputs.cache
 C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\Ahorcado\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.exe
 C:\Users\Emilio\Desktop\Visual Studio\VisualStudio\Ahorcado\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.pdb
+C:\Users\2dam\Documents\yeye\VisualStudio\Ahorcado\WindowsFormsApp7\bin\Debug\Ahorcado.exe.config
+C:\Users\2dam\Documents\yeye\VisualStudio\Ahorcado\WindowsFormsApp7\bin\Debug\Ahorcado.exe
+C:\Users\2dam\Documents\yeye\VisualStudio\Ahorcado\WindowsFormsApp7\bin\Debug\Ahorcado.pdb
+C:\Users\2dam\Documents\yeye\VisualStudio\Ahorcado\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csprojAssemblyReference.cache
+C:\Users\2dam\Documents\yeye\VisualStudio\Ahorcado\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.AñadirPalabra.resources
+C:\Users\2dam\Documents\yeye\VisualStudio\Ahorcado\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Form1.resources
+C:\Users\2dam\Documents\yeye\VisualStudio\Ahorcado\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Form2.resources
+C:\Users\2dam\Documents\yeye\VisualStudio\Ahorcado\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Login.resources
+C:\Users\2dam\Documents\yeye\VisualStudio\Ahorcado\WindowsFormsApp7\obj\Debug\Ahoracado.Properties.Resources.resources
+C:\Users\2dam\Documents\yeye\VisualStudio\Ahorcado\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Registro.resources
+C:\Users\2dam\Documents\yeye\VisualStudio\Ahorcado\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.GenerateResource.cache
+C:\Users\2dam\Documents\yeye\VisualStudio\Ahorcado\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.CoreCompileInputs.cache
+C:\Users\2dam\Documents\yeye\VisualStudio\Ahorcado\WindowsFormsApp7\obj\Debug\Ahorcado.exe
+C:\Users\2dam\Documents\yeye\VisualStudio\Ahorcado\WindowsFormsApp7\obj\Debug\Ahorcado.pdb
+C:\Users\2dam\Documents\yeye\VisualStudio\Ahorcado\WindowsFormsApp7\bin\Debug\Ahorcado.exe.manifest
+C:\Users\2dam\Documents\yeye\VisualStudio\Ahorcado\WindowsFormsApp7\bin\Debug\Ahorcado.application
+C:\Users\2dam\Documents\yeye\VisualStudio\Ahorcado\WindowsFormsApp7\obj\Debug\Ahorcado.TrustInfo.xml
+C:\Users\2dam\Documents\yeye\VisualStudio\Ahorcado\WindowsFormsApp7\obj\Debug\Ahorcado.exe.manifest
+C:\Users\2dam\Documents\yeye\VisualStudio\Ahorcado\WindowsFormsApp7\obj\Debug\Ahorcado.application
