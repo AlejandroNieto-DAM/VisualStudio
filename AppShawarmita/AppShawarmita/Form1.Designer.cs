@@ -33,6 +33,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.userControl31 = new AppShawarmita.UserControl3();
+            this.userControl21 = new AppShawarmita.UserControl2();
+            this.userControl11 = new AppShawarmita.UserControl1();
             this.SuspendLayout();
             // 
             // button1
@@ -92,6 +95,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "BEBIDA";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -106,6 +110,28 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "COMPLEMENTOS";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // userControl31
+            // 
+            this.userControl31.Location = new System.Drawing.Point(0, 43);
+            this.userControl31.Name = "userControl31";
+            this.userControl31.Size = new System.Drawing.Size(702, 47);
+            this.userControl31.TabIndex = 7;
+            // 
+            // userControl21
+            // 
+            this.userControl21.Location = new System.Drawing.Point(0, 43);
+            this.userControl21.Name = "userControl21";
+            this.userControl21.Size = new System.Drawing.Size(702, 47);
+            this.userControl21.TabIndex = 6;
+            // 
+            // userControl11
+            // 
+            this.userControl11.Location = new System.Drawing.Point(1, 43);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(702, 47);
+            this.userControl11.TabIndex = 5;
             // 
             // Form1
             // 
@@ -113,6 +139,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(702, 788);
+            this.Controls.Add(this.userControl31);
+            this.Controls.Add(this.userControl21);
+            this.Controls.Add(this.userControl11);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -133,6 +162,9 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private UserControl1 userControl11;
+        private UserControl2 userControl21;
+        private UserControl3 userControl31;
     }
 }
 
