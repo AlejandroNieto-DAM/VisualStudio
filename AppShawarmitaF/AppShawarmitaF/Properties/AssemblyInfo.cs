@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("AppShawarmita")]
+[assembly: AssemblyTitle("AppShawarmitaF")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("AppShawarmita")]
+[assembly: AssemblyProduct("AppShawarmitaF")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("bd362c42-cc6d-404a-a193-3d673ade210c")]
+[assembly: Guid("75341153-3b3e-4cc9-83e1-8f79bd7aabd1")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //

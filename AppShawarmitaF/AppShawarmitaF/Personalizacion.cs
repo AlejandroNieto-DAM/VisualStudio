@@ -8,13 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AppShawarmita
+namespace AppShawarmitaF
 {
-    public partial class VentanaPersonalizacionHamburguesa : Form
+    public partial class Personalizacion : Form
     {
-        public VentanaPersonalizacionHamburguesa()
+
+        Image antonio;
+        public Personalizacion(Image a)
         {
             InitializeComponent();
+            pictureBox1.Image = a;
+        }
+
+      
+
+        private void Personalizacion_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

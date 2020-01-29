@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AppShawarmita.Properties
+namespace AppShawarmitaF.Properties
 {
 
 
