@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace AppShawarmitaF
 {
-    public partial class burguers : UserControl
+    public partial class Kebab : UserControl
     {
-        public burguers()
+        public Kebab()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Personalizacion a = new Personalizacion(pictureBox1.Image, Form1.burguersTienda[0].ToString());
-            a.Visible = true;
-            
-
         }
     }
 }

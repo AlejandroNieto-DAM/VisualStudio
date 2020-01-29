@@ -31,30 +31,33 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.burguers1 = new AppShawarmitaF.burguers();
+            this.burguers2 = new AppShawarmitaF.burguers();
+            this.kebab1 = new AppShawarmitaF.Kebab();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,6 +72,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel1.Controls.Add(this.panel9);
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.button6);
@@ -81,92 +86,65 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(-1, 29);
+            this.panel1.Location = new System.Drawing.Point(0, 32);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(186, 420);
             this.panel1.TabIndex = 1;
             // 
-            // button1
+            // panel9
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 89);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 34);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Burguers";
-            this.button1.UseVisualStyleBackColor = false;
+            this.panel9.Location = new System.Drawing.Point(3, 390);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(6, 25);
+            this.panel9.TabIndex = 13;
             // 
-            // panel2
+            // button2
             // 
-            this.panel2.Controls.Add(this.panel7);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(3, 94);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(6, 25);
-            this.panel2.TabIndex = 2;
+            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.Location = new System.Drawing.Point(0, 386);
+            this.button2.Margin = new System.Windows.Forms.Padding(28, 3, 3, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(186, 34);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Administrador";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // pictureBox1
+            // pictureBox6
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(15, 90);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(33, 33);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox6.BackColor = System.Drawing.Color.Black;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(15, 196);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(33, 33);
+            this.pictureBox6.TabIndex = 9;
+            this.pictureBox6.TabStop = false;
             // 
-            // pictureBox2
+            // panel8
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Black;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-75, -4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(33, 33);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.panel8.Location = new System.Drawing.Point(3, 199);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(6, 25);
+            this.panel8.TabIndex = 10;
             // 
-            // panel3
+            // button6
             // 
-            this.panel3.Location = new System.Drawing.Point(-87, -1);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(6, 25);
-            this.panel3.TabIndex = 4;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 125);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(186, 34);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Kebabs";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(3, 129);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(6, 25);
-            this.panel4.TabIndex = 4;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Black;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(15, 126);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(33, 33);
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
+            this.button6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(0, 195);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(186, 34);
+            this.button6.TabIndex = 11;
+            this.button6.Text = "Otros";
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // pictureBox4
             // 
@@ -199,6 +177,58 @@
             this.button4.Text = "Bebida";
             this.button4.UseVisualStyleBackColor = false;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Black;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(15, 126);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(33, 33);
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(3, 129);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(6, 25);
+            this.panel4.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(15, 90);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(33, 33);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(0, 125);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(186, 34);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Kebabs";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.panel7);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Location = new System.Drawing.Point(3, 94);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(6, 25);
+            this.panel2.TabIndex = 2;
+            // 
             // panel7
             // 
             this.panel7.Location = new System.Drawing.Point(0, 19);
@@ -206,51 +236,60 @@
             this.panel7.Size = new System.Drawing.Size(6, 25);
             this.panel7.TabIndex = 5;
             // 
-            // button6
+            // pictureBox2
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(0, 195);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(186, 34);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "Otros";
-            this.button6.UseVisualStyleBackColor = false;
+            this.pictureBox2.BackColor = System.Drawing.Color.Black;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(-75, -4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(33, 33);
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
             // 
-            // panel8
+            // panel3
             // 
-            this.panel8.Location = new System.Drawing.Point(3, 199);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(6, 25);
-            this.panel8.TabIndex = 10;
+            this.panel3.Location = new System.Drawing.Point(-87, -1);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(6, 25);
+            this.panel3.TabIndex = 4;
             // 
-            // pictureBox6
+            // button1
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Black;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(15, 196);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(33, 33);
-            this.pictureBox6.TabIndex = 9;
-            this.pictureBox6.TabStop = false;
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(0, 89);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(186, 34);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Burguers";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.burguers1);
+            this.panel6.Controls.Add(this.burguers2);
+            this.panel6.Controls.Add(this.kebab1);
             this.panel6.Location = new System.Drawing.Point(205, 78);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(583, 360);
             this.panel6.TabIndex = 2;
             // 
-            // burguers1
+            // burguers2
             // 
-            this.burguers1.Location = new System.Drawing.Point(0, 0);
-            this.burguers1.Name = "burguers1";
-            this.burguers1.Size = new System.Drawing.Size(583, 360);
-            this.burguers1.TabIndex = 0;
+            this.burguers2.Location = new System.Drawing.Point(-3, -3);
+            this.burguers2.Name = "burguers2";
+            this.burguers2.Size = new System.Drawing.Size(583, 360);
+            this.burguers2.TabIndex = 1;
+            // 
+            // kebab1
+            // 
+            this.kebab1.Location = new System.Drawing.Point(0, 0);
+            this.kebab1.Name = "kebab1";
+            this.kebab1.Size = new System.Drawing.Size(583, 360);
+            this.kebab1.TabIndex = 0;
             // 
             // Form1
             // 
@@ -265,13 +304,14 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -298,6 +338,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel6;
         private burguers burguers1;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Button button2;
+        private Kebab kebab1;
+        private burguers burguers2;
     }
 }
 
