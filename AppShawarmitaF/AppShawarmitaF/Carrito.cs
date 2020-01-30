@@ -15,6 +15,18 @@ namespace AppShawarmitaF
         public Carrito()
         {
             InitializeComponent();
+
+        }
+
+        private void Carrito_Load(object sender, EventArgs e)
+        {
+
+            Console.WriteLine("Antonio la chupa " + Form1.carrito.Count);
+
+            foreach (Comida a in Form1.carrito)
+            {
+                listView1.Items.Add(a.getName());
+            }
         }
     }
 }

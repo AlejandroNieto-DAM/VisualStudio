@@ -8,26 +8,32 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace AppShawarmitaF
 {
     public partial class Personalizacion : Form
     {
 
-        String nombrePrecio;
+        Comida seleccionada = new Comida();
 
-        public Personalizacion(Image a, String nombre_precio)
+        public Personalizacion(Comida comidaSeleccionada)
         {
             InitializeComponent();
-            pictureBox1.Image = a;
-            this.nombrePrecio = nombre_precio;
-            label1.Text = nombre_precio.Substring(0, nombre_precio.IndexOf(","));
+            pictureBox1.Image = comidaSeleccionada.getImage();
+             
+            label1.Text = comidaSeleccionada.getName();
+
+            seleccionada.setName(comidaSeleccionada.getName());
+            seleccionada.setPrecio(comidaSeleccionada.getPrecio());
+            seleccionada.setImage(comidaSeleccionada.getImage());
         }
 
       
 
         private void Personalizacion_Load(object sender, EventArgs e)
         {
-            
+            label1.Text = seleccionada.getName();
+            label5.Text = seleccionada.getPrecio() + "€";
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -37,10 +43,22 @@ namespace AppShawarmitaF
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            Form1.carrito.Add(seleccionada);
+            Console.WriteLine("yeyo" + Form1.carrito.Count);
             Carrito a = new Carrito();
             a.Visible = true;
-            Form1.carrito.Add(nombrePrecio);
             this.Close();
+        }
+
+        private void checkBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

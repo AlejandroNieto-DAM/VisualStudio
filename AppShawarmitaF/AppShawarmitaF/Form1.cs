@@ -40,8 +40,27 @@ namespace AppShawarmitaF
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            burguersTienda.Add("BurguerDemoniaca,10");
-            burguersTienda.Add("BurguerNormal,5");
+            Comida aux = new Comida();
+            aux.setName("Burguer Demoniaca");
+            aux.setPrecio(15);
+
+            Comida aux1 = new Comida();
+            aux1.setName("Burguer No Demoniaca");
+            aux1.setPrecio(10);
+
+            Comida aux2 = new Comida();
+            aux2.setName("Burguer Normal");
+            aux2.setPrecio(1);
+
+            Comida aux3 = new Comida();
+            aux3.setName("Burguer Celiaca");
+            aux3.setPrecio(7);
+
+            burguersTienda.Add(aux);
+            burguersTienda.Add(aux1);
+            burguersTienda.Add(aux2);
+            burguersTienda.Add(aux3);
+
         }
     }
 }
