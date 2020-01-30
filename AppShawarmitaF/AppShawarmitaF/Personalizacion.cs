@@ -19,10 +19,9 @@ namespace AppShawarmitaF
         public Personalizacion(Comida comidaSeleccionada)
         {
             InitializeComponent();
+
             pictureBox1.Image = comidaSeleccionada.getImage();
              
-            label1.Text = comidaSeleccionada.getName();
-
             seleccionada.setName(comidaSeleccionada.getName());
             seleccionada.setPrecio(comidaSeleccionada.getPrecio());
             seleccionada.setImage(comidaSeleccionada.getImage());
@@ -45,7 +44,6 @@ namespace AppShawarmitaF
         {
 
             Form1.carrito.Add(seleccionada);
-            Console.WriteLine("yeyo" + Form1.carrito.Count);
             Carrito a = new Carrito();
             a.Visible = true;
             this.Close();
@@ -59,6 +57,43 @@ namespace AppShawarmitaF
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if(seleccionada.getTomate() == false)
+            {
+                seleccionada.setTomate(true);
+            }
+            else
+            {
+                seleccionada.setTomate(false);
+            }
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+           
+            if (seleccionada.getCebolla() == false)
+            {
+                seleccionada.setCebolla(true);
+            }
+            else
+            {
+                seleccionada.setCebolla(false);
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (seleccionada.getLechuga() == false)
+            {
+                seleccionada.setLechuga(true);
+            }
+            else
+            {
+                seleccionada.setLechuga(false);
+            }
         }
     }
 }

@@ -15,6 +15,7 @@ namespace AppShawarmitaF
     {
         public static ArrayList carrito;
         public static ArrayList burguersTienda;
+
         public Form1()
         {
             InitializeComponent();
@@ -60,6 +61,27 @@ namespace AppShawarmitaF
             burguersTienda.Add(aux1);
             burguersTienda.Add(aux2);
             burguersTienda.Add(aux3);
+
+            Comida k1 = new Comida();
+            aux.setName("Shawarma Demoniaco");
+            aux.setPrecio(15);
+
+            Comida k2 = new Comida();
+            aux1.setName("Shawarma No Demoniaco");
+            aux1.setPrecio(10);
+
+            Comida k3 = new Comida();
+            aux2.setName("Shawarma Normal");
+            aux2.setPrecio(1);
+
+            Comida k4 = new Comida();
+            aux3.setName("Shawarma Celiaco");
+            aux3.setPrecio(7);
+
+            burguersTienda.Add(k1);
+            burguersTienda.Add(k2);
+            burguersTienda.Add(k3);
+            burguersTienda.Add(k4);
 
         }
     }

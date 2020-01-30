@@ -50,7 +50,7 @@ namespace AppShawarmitaF
 
         public void setCebolla(Boolean ceboll)
         {
-            this.lechuga = ceboll;
+            this.cebolla = ceboll;
         }
 
         public void setPrecio(Double pre)
@@ -86,6 +86,16 @@ namespace AppShawarmitaF
         public Image getImage()
         {
             return image;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
 
 
