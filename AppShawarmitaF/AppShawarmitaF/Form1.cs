@@ -83,6 +83,35 @@ namespace AppShawarmitaF
             burguersTienda.Add(k3);
             burguersTienda.Add(k4);
 
+
+            Comida b1 = new Comida();
+            aux.setName("Agua");
+            aux.setPrecio(1.5);
+
+            Comida b2 = new Comida();
+            aux1.setName("Coca Cola");
+            aux1.setPrecio(1.8);
+
+            Comida b3 = new Comida();
+            aux2.setName("Fanta");
+            aux2.setPrecio(2);
+
+            Comida b4 = new Comida();
+            aux3.setName("Aquarius");
+            aux3.setPrecio(1.7);
+
+            burguersTienda.Add(b1);
+            burguersTienda.Add(b2);
+            burguersTienda.Add(b3);
+            burguersTienda.Add(b4);
+
+            burguers2.BringToFront();
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            bebida1.BringToFront();
         }
     }
 }

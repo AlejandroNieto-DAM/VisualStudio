@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace AppShawarmitaF
 {
-    public partial class burguers : UserControl
+    public partial class Bebida : UserControl
     {
-        public burguers()
+        public Bebida()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            buscarYPersonalizar("Burguer Demoniaca");
-        }
-
-        private void burguers_Load(object sender, EventArgs e)
-        {
-            
         }
 
         private void buscarYPersonalizar(String nombre)
@@ -34,20 +24,20 @@ namespace AppShawarmitaF
                 if (comida.getName().Equals(nombre))
                 {
                     Comida aux = new Comida();
-                    aux.setName(comida.getName());  
+                    aux.setName(comida.getName());
                     aux.setPrecio(comida.getPrecio());
 
-                    
 
-                    if(nombre.Equals("Burguer Demoniaca"))
+
+                    if (nombre.Equals("Agua"))
                     {
                         aux.setImage(pictureBox1.Image);
                     }
-                    else if (nombre.Equals("Burguer No Demoniaca"))
+                    else if (nombre.Equals("Coca Cola"))
                     {
                         aux.setImage(pictureBox2.Image);
                     }
-                    else if (nombre.Equals("Burguer Normal"))
+                    else if (nombre.Equals("Aquarius"))
                     {
                         aux.setImage(pictureBox3.Image);
                     }
@@ -65,23 +55,26 @@ namespace AppShawarmitaF
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            buscarYPersonalizar("Agua");
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
-            buscarYPersonalizar("Burguer No Demoniaca");
+            buscarYPersonalizar("Coca Cola");
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            buscarYPersonalizar("Burguer Normal");
+            buscarYPersonalizar("Aquarius");
+
         }
 
-        private void button4_Click_1(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            buscarYPersonalizar("Burguer Celiaca");
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
+            buscarYPersonalizar("Fanta");
 
         }
     }

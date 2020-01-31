@@ -51,6 +51,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.burguers2 = new AppShawarmitaF.burguers();
             this.kebab1 = new AppShawarmitaF.Kebab();
+            this.bebida1 = new AppShawarmitaF.Bebida();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -177,6 +178,7 @@
             this.button4.TabIndex = 8;
             this.button4.Text = "Bebida";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox3
             // 
@@ -271,6 +273,7 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.bebida1);
             this.panel6.Controls.Add(this.burguers2);
             this.panel6.Controls.Add(this.kebab1);
             this.panel6.Location = new System.Drawing.Point(205, 78);
@@ -291,6 +294,13 @@
             this.kebab1.Name = "kebab1";
             this.kebab1.Size = new System.Drawing.Size(596, 400);
             this.kebab1.TabIndex = 0;
+            // 
+            // bebida1
+            // 
+            this.bebida1.Location = new System.Drawing.Point(-13, -26);
+            this.bebida1.Name = "bebida1";
+            this.bebida1.Size = new System.Drawing.Size(596, 400);
+            this.bebida1.TabIndex = 2;
             // 
             // Form1
             // 
@@ -343,6 +353,7 @@
         private System.Windows.Forms.Button button2;
         private Kebab kebab1;
         private burguers burguers2;
+        private Bebida bebida1;
     }
 }
 
