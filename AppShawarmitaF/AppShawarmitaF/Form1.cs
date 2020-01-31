@@ -13,13 +13,23 @@ namespace AppShawarmitaF
 {
     public partial class Form1 : Form
     {
+        public static Form1 principal;
         public static ArrayList carrito;
         public static ArrayList burguersTienda;
 
         public Form1()
         {
             InitializeComponent();
+            principal = this;
             carrito = new ArrayList();
+            burguersTienda = new ArrayList();
+        }
+       
+
+        public Form1(ArrayList carrito)
+        {
+            InitializeComponent();
+            carrito = carrito;
             burguersTienda = new ArrayList();
         }
 
@@ -35,7 +45,7 @@ namespace AppShawarmitaF
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+
             kebab1.BringToFront();
         }
 
@@ -83,28 +93,6 @@ namespace AppShawarmitaF
             burguersTienda.Add(k3);
             burguersTienda.Add(k4);
 
-
-            Comida b1 = new Comida();
-            b1.setName("Agua");
-            b1.setPrecio(1.5);
-
-            Comida b2 = new Comida();
-            b2.setName("Coca Cola");
-            b2.setPrecio(1.8);
-
-            Comida b3 = new Comida();
-            b3.setName("Fanta");
-            b3.setPrecio(2);
-
-            Comida b4 = new Comida();
-            b4.setName("Aquarius");
-            b4.setPrecio(1.7);
-
-            burguersTienda.Add(b1);
-            burguersTienda.Add(b2);
-            burguersTienda.Add(b3);
-            burguersTienda.Add(b4);
-
             burguers2.BringToFront();
 
         }
@@ -112,6 +100,11 @@ namespace AppShawarmitaF
         private void button4_Click(object sender, EventArgs e)
         {
             bebida1.BringToFront();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            complementos1.BringToFront();
         }
     }
 }

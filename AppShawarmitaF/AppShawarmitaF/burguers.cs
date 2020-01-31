@@ -12,6 +12,8 @@ namespace AppShawarmitaF
 {
     public partial class burguers : UserControl
     {
+        Form form;
+
         public burguers()
         {
             InitializeComponent();
@@ -59,14 +61,17 @@ namespace AppShawarmitaF
                     }
 
 
-
-
+                    
                     Personalizacion a = new Personalizacion(aux);
                     a.Visible = true;
+                    Form1.principal.Visible = false;
+
                 }
 
                 
             }
+
+
         }
 
         private void button2_Click(object sender, EventArgs e)

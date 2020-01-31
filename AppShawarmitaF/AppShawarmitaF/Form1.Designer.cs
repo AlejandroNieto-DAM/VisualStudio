@@ -49,9 +49,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.complementos1 = new AppShawarmitaF.Complementos();
+            this.bebida1 = new AppShawarmitaF.Bebida();
             this.burguers2 = new AppShawarmitaF.burguers();
             this.kebab1 = new AppShawarmitaF.Kebab();
-            this.bebida1 = new AppShawarmitaF.Bebida();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -147,6 +148,7 @@
             this.button6.TabIndex = 11;
             this.button6.Text = "Otros";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // pictureBox4
             // 
@@ -273,6 +275,7 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.complementos1);
             this.panel6.Controls.Add(this.bebida1);
             this.panel6.Controls.Add(this.burguers2);
             this.panel6.Controls.Add(this.kebab1);
@@ -280,6 +283,20 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(583, 360);
             this.panel6.TabIndex = 2;
+            // 
+            // complementos1
+            // 
+            this.complementos1.Location = new System.Drawing.Point(-13, -26);
+            this.complementos1.Name = "complementos1";
+            this.complementos1.Size = new System.Drawing.Size(596, 400);
+            this.complementos1.TabIndex = 3;
+            // 
+            // bebida1
+            // 
+            this.bebida1.Location = new System.Drawing.Point(-13, -26);
+            this.bebida1.Name = "bebida1";
+            this.bebida1.Size = new System.Drawing.Size(596, 400);
+            this.bebida1.TabIndex = 2;
             // 
             // burguers2
             // 
@@ -294,13 +311,6 @@
             this.kebab1.Name = "kebab1";
             this.kebab1.Size = new System.Drawing.Size(596, 400);
             this.kebab1.TabIndex = 0;
-            // 
-            // bebida1
-            // 
-            this.bebida1.Location = new System.Drawing.Point(-13, -26);
-            this.bebida1.Name = "bebida1";
-            this.bebida1.Size = new System.Drawing.Size(596, 400);
-            this.bebida1.TabIndex = 2;
             // 
             // Form1
             // 
@@ -354,6 +364,7 @@
         private Kebab kebab1;
         private burguers burguers2;
         private Bebida bebida1;
+        private Complementos complementos1;
     }
 }
 

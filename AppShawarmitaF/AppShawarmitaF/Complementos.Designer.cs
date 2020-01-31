@@ -56,7 +56,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 49);
             this.label4.TabIndex = 26;
-            this.label4.Text = "7€";
+            this.label4.Text = "4€";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox4
@@ -80,6 +80,7 @@
             this.button4.TabIndex = 24;
             this.button4.Text = "PATATAS DELUXE";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label3
             // 
@@ -90,7 +91,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 48);
             this.label3.TabIndex = 23;
-            this.label3.Text = "1€";
+            this.label3.Text = "5€";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox3
@@ -114,6 +115,7 @@
             this.button3.TabIndex = 21;
             this.button3.Text = "ALITAS";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label2
             // 
@@ -124,7 +126,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 49);
             this.label2.TabIndex = 20;
-            this.label2.Text = "10€";
+            this.label2.Text = "3€";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox2
@@ -148,6 +150,7 @@
             this.button2.TabIndex = 18;
             this.button2.Text = "PATATAS FRITAS";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
@@ -158,7 +161,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 49);
             this.label1.TabIndex = 17;
-            this.label1.Text = "15€";
+            this.label1.Text = "5€";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
@@ -182,6 +185,7 @@
             this.button1.TabIndex = 15;
             this.button1.Text = "NUGGETS DEMONIACOS";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Complementos
             // 

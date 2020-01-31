@@ -17,65 +17,65 @@ namespace AppShawarmitaF
             InitializeComponent();
         }
 
-        private void buscarYPersonalizar(String nombre)
-        {
-            foreach (Comida comida in Form1.burguersTienda)
-            {
-                if (comida.getName().Equals(nombre))
-                {
-                    Comida aux = new Comida();
-                    aux.setName(comida.getName());
-                    aux.setPrecio(comida.getPrecio());
-
-
-
-                    if (nombre.Equals("Agua"))
-                    {
-                        aux.setImage(pictureBox1.Image);
-                    }
-                    else if (nombre.Equals("Coca Cola"))
-                    {
-                        aux.setImage(pictureBox2.Image);
-                    }
-                    else if (nombre.Equals("Aquarius"))
-                    {
-                        aux.setImage(pictureBox3.Image);
-                    }
-                    else
-                    {
-                        aux.setImage(pictureBox4.Image);
-                    }
-
-
-
-
-                    Personalizacion a = new Personalizacion(aux);
-                    a.Visible = true;
-                }
-            }
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
-            buscarYPersonalizar("Agua");
+           
+            Comida b1 = new Comida();
+            b1.setName("Agua");
+            b1.setPrecio(1.5);
+            b1.setImage(pictureBox1.Image);
+
+            Form1.carrito.Add(b1);
+            Carrito a = new Carrito();
+            a.Visible = true;
+
+            Form1.principal.Visible = false;
+
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            buscarYPersonalizar("Coca Cola");
+            Comida b2 = new Comida();
+            b2.setName("Coca Cola");
+            b2.setPrecio(1.8);
+            b2.setImage(pictureBox2.Image);
 
+            Form1.carrito.Add(b2);
+            Carrito a = new Carrito();
+            a.Visible = true;
+
+            Form1.principal.Visible = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            buscarYPersonalizar("Aquarius");
+            Comida b3 = new Comida();
+            b3.setName("Fanta");
+            b3.setPrecio(2);
+            b3.setImage(pictureBox3.Image);
 
+            Form1.carrito.Add(b3);
+            Carrito a = new Carrito();
+            a.Visible = true;
+
+            Form1.principal.Visible = false;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            buscarYPersonalizar("Fanta");
+            Comida b4 = new Comida();
+            b4.setName("Aquarius");
+            b4.setPrecio(1.7);
+            b4.setImage(pictureBox4.Image);
 
+            Form1.carrito.Add(b4);
+            Carrito a = new Carrito();
+            a.Visible = true;
+
+            Form1.principal.Visible = false;
         }
     }
 }

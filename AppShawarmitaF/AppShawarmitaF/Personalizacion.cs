@@ -15,6 +15,7 @@ namespace AppShawarmitaF
     {
 
         Comida seleccionada = new Comida();
+        int cantidad = 1;
 
         public Personalizacion(Comida comidaSeleccionada)
         {
@@ -25,9 +26,11 @@ namespace AppShawarmitaF
             seleccionada.setName(comidaSeleccionada.getName());
             seleccionada.setPrecio(comidaSeleccionada.getPrecio());
             seleccionada.setImage(comidaSeleccionada.getImage());
+            textBox1.Text = cantidad.ToString();
+
         }
 
-      
+
 
         private void Personalizacion_Load(object sender, EventArgs e)
         {
@@ -42,8 +45,13 @@ namespace AppShawarmitaF
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
 
-            Form1.carrito.Add(seleccionada);
+            for(int i = 0; i < Int16.Parse(textBox1.Text); i++)
+            {
+                Form1.carrito.Add(seleccionada);
+            }
+            
             Carrito a = new Carrito();
             a.Visible = true;
             this.Close();
@@ -94,6 +102,45 @@ namespace AppShawarmitaF
             {
                 seleccionada.setLechuga(false);
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 a = new Form1();
+            a.Visible = true;
+            this.Close();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if(cantidad > 1)
+            {
+                cantidad--;
+                textBox1.Text = cantidad.ToString();
+            }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            
+            cantidad++;
+            textBox1.Text = cantidad.ToString();
+            
         }
     }
 }

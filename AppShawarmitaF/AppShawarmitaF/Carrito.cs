@@ -52,7 +52,7 @@ namespace AppShawarmitaF
 
             listView1.SmallImageList = imgs;
 
-
+            int contador = 0;
 
             foreach (Comida a in Form1.carrito)
             {
@@ -78,24 +78,23 @@ namespace AppShawarmitaF
                     tomate = "\n\t + Tomate";
                 }
 
-                listView1.Items.Add(a.getName() + lechuga + tomate + cebolla, 0);
+                listView1.Items.Add(a.getName() + lechuga + tomate + cebolla, contador);
 
                 totalPrecio += a.getPrecio();
-
+                contador++;
             }
 
-
-
         }
-
-    
-
-
-        
 
         private void listView1_ItemCheck(object sender, ItemCheckEventArgs e)
         {
             Form1.carrito.Add(listView1.GetItemAt(0,0));
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1.principal.Visible = true;
+            this.Close();
         }
     }
 }
