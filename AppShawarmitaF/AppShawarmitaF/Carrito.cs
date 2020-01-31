@@ -30,7 +30,7 @@ namespace AppShawarmitaF
         private void Carrito_Load(object sender, EventArgs e)
         {
             listView1.View = View.Details;
-            listView1.Columns.Add("Carrito", 150);
+            listView1.Columns.Add("Carrito", 400);
             listView1.AutoResizeColumn(0, ColumnHeaderAutoResizeStyle.HeaderSize);
 
             populate();
