@@ -52,50 +52,46 @@ namespace AppShawarmitaF
 
             listView1.SmallImageList = imgs;
 
-            
+
 
             foreach (Comida a in Form1.carrito)
             {
-                foreach(Comida b in seMuestra)
+
+                String cebolla = "";
+                String tomate = "";
+                String lechuga = "";
+
+                Console.WriteLine("yeyeo en mi iopgene " + a.getCebolla());
+
+                if (a.getCebolla() == true)
                 {
-
-                    if (!a.Equals(b))
-                    {
-                        String cebolla = "";
-                        String tomate = "";
-                        String lechuga = "";
-
-                        Console.WriteLine("yeyeo en mi iopgene " + a.getCebolla());
-
-                        if (a.getCebolla() == true)
-                        {
-                            cebolla = "\n\t + Cebolla";
-                        }
-
-                        if (a.getLechuga() == true)
-                        {
-                            lechuga = "\n\t + Lechuga";
-                        }
-
-                        if (a.getTomate() == true)
-                        {
-                            tomate = "\n\t + Tomate";
-                        }
-
-                        listView1.Items.Add(a.getName() + lechuga + tomate + cebolla, 0);
-
-                        seMuestra.Add(a);
-
-                    }
+                    cebolla = "\n\t + Cebolla";
                 }
-                   
-                
+
+                if (a.getLechuga() == true)
+                {
+                    lechuga = "\n\t + Lechuga";
+                }
+
+                if (a.getTomate() == true)
+                {
+                    tomate = "\n\t + Tomate";
+                }
+
+                listView1.Items.Add(a.getName() + lechuga + tomate + cebolla, 0);
 
                 totalPrecio += a.getPrecio();
+
             }
 
 
+
         }
+
+    
+
+
+        
 
         private void listView1_ItemCheck(object sender, ItemCheckEventArgs e)
         {

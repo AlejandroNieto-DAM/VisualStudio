@@ -63,20 +63,20 @@ namespace AppShawarmitaF
             burguersTienda.Add(aux3);
 
             Comida k1 = new Comida();
-            aux.setName("Shawarma Demoniaco");
-            aux.setPrecio(15);
+            k1.setName("Shawarma Demoniaco");
+            k1.setPrecio(15);
 
             Comida k2 = new Comida();
-            aux1.setName("Shawarma No Demoniaco");
-            aux1.setPrecio(10);
+            k2.setName("Shawarma No Demoniaco");
+            k2.setPrecio(10);
 
             Comida k3 = new Comida();
-            aux2.setName("Shawarma Normal");
-            aux2.setPrecio(1);
+            k3.setName("Shawarma Normal");
+            k3.setPrecio(1);
 
             Comida k4 = new Comida();
-            aux3.setName("Shawarma Celiaco");
-            aux3.setPrecio(7);
+            k4.setName("Shawarma Celiaco");
+            k4.setPrecio(7);
 
             burguersTienda.Add(k1);
             burguersTienda.Add(k2);
@@ -85,20 +85,20 @@ namespace AppShawarmitaF
 
 
             Comida b1 = new Comida();
-            aux.setName("Agua");
-            aux.setPrecio(1.5);
+            b1.setName("Agua");
+            b1.setPrecio(1.5);
 
             Comida b2 = new Comida();
-            aux1.setName("Coca Cola");
-            aux1.setPrecio(1.8);
+            b2.setName("Coca Cola");
+            b2.setPrecio(1.8);
 
             Comida b3 = new Comida();
-            aux2.setName("Fanta");
-            aux2.setPrecio(2);
+            b3.setName("Fanta");
+            b3.setPrecio(2);
 
             Comida b4 = new Comida();
-            aux3.setName("Aquarius");
-            aux3.setPrecio(1.7);
+            b4.setName("Aquarius");
+            b4.setPrecio(1.7);
 
             burguersTienda.Add(b1);
             burguersTienda.Add(b2);

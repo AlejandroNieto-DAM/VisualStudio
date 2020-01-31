@@ -19,6 +19,7 @@ namespace AppShawarmitaF
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             buscarYPersonalizar("Burguer Demoniaca");
         }
 
@@ -31,15 +32,16 @@ namespace AppShawarmitaF
         {
             foreach (Comida comida in Form1.burguersTienda)
             {
+
                 if (comida.getName().Equals(nombre))
                 {
                     Comida aux = new Comida();
-                    aux.setName(comida.getName());  
+                    aux.setName(comida.getName());
                     aux.setPrecio(comida.getPrecio());
 
-                    
 
-                    if(nombre.Equals("Burguer Demoniaca"))
+
+                    if (nombre.Equals("Burguer Demoniaca"))
                     {
                         aux.setImage(pictureBox1.Image);
                     }
@@ -62,6 +64,8 @@ namespace AppShawarmitaF
                     Personalizacion a = new Personalizacion(aux);
                     a.Visible = true;
                 }
+
+                
             }
         }
 
