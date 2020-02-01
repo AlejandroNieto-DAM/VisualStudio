@@ -16,6 +16,11 @@ namespace AppShawarmitaF
         public static Form1 principal;
         public static ArrayList carrito;
         public static ArrayList burguersTienda;
+        
+        public static Double promocion1 = 0.8;
+        public static Double promocion2 = 0.7;
+
+
 
         public Form1()
         {
@@ -35,7 +40,9 @@ namespace AppShawarmitaF
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            AdminLogin a = new AdminLogin();
+            a.Visible = true;
+            this.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)

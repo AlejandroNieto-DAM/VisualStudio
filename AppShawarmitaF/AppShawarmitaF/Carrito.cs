@@ -1,14 +1,7 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Header;
 
 namespace AppShawarmitaF
 {
@@ -18,12 +11,13 @@ namespace AppShawarmitaF
         Double totalPrecio;
         ArrayList seMuestra;
 
+        private String codigoDescuento = "Demonio";
+
         public Carrito()
         {
             InitializeComponent();
             totalPrecio = 0.0;
             seMuestra = new ArrayList();
-            seMuestra.Add(Form1.carrito[0]);
 
         }
 
@@ -34,6 +28,24 @@ namespace AppShawarmitaF
             listView1.AutoResizeColumn(0, ColumnHeaderAutoResizeStyle.HeaderSize);
 
             populate();
+
+            if(totalPrecio > 40 && totalPrecio < 50)
+            {
+                totalPrecio = totalPrecio * Form1.promocion1;
+                label5.Text = "Promocion de descuento del 20%";
+                label5.Visible = true;
+
+            }
+            else if (totalPrecio >= 50)
+            {
+
+                totalPrecio = totalPrecio * Form1.promocion2;
+                label5.Text = "Promocion de descuento del 30%";
+                label5.Visible = true;
+            }
+
+
+            
 
             label2.Text = totalPrecio + "€";
 
@@ -95,6 +107,46 @@ namespace AppShawarmitaF
         {
             Form1.principal.Visible = true;
             this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            
+            try
+            {
+                int indiceABorrar = listView1.SelectedIndices[0];
+                listView1.Items.RemoveAt(indiceABorrar);
+                Form1.carrito.RemoveAt(indiceABorrar);
+                Carrito a = new Carrito();
+                a.Visible = true;
+                this.Close();
+
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine(ex);
+                label3.Text = "Debes seleccionar un producto para eliminarlo.";
+                label3.Visible = true;
+            }
+            
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Equals(codigoDescuento) && totalPrecio > 15)
+            {
+                totalPrecio = totalPrecio - 5;
+                label6.Text = "Codigo descuento aceptado!";
+                label6.Visible = true;
+                label2.Text = totalPrecio.ToString() + "€";
+            }
         }
     }
 }
