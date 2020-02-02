@@ -105,7 +105,8 @@ namespace AppShawarmitaF
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1.principal.Visible = true;
+            PagoEnvio a = new PagoEnvio();
+            a.Visible = true;
             this.Close();
         }
 

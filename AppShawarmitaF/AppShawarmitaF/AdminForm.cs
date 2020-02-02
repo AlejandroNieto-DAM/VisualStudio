@@ -32,8 +32,8 @@ namespace AppShawarmitaF
         {
             if(textBox1.Text != "" && textBox2.Text != "" && Double.Parse(textBox1.Text) < 50 && Double.Parse(textBox2.Text) < 50)
             {
-                Form1.promocion1 = Double.Parse(textBox1.Text);
-                Form1.promocion2 = Double.Parse(textBox2.Text);
+                Form1.promocion1 = 1.0 - (Double.Parse(textBox1.Text)/100);
+                Form1.promocion2 = 1.0 - (Double.Parse(textBox2.Text)/100);
                 this.Visible = false;
                 Form1.principal.Visible = true;
             }

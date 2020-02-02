@@ -49,10 +49,13 @@
             this.bebida1 = new AppShawarmitaF.Bebida();
             this.burguers2 = new AppShawarmitaF.burguers();
             this.kebab1 = new AppShawarmitaF.Kebab();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -109,7 +112,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Gold;
-            this.panel8.Location = new System.Drawing.Point(3, 199);
+            this.panel8.Location = new System.Drawing.Point(3, 265);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(6, 25);
             this.panel8.TabIndex = 10;
@@ -121,7 +124,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.Gold;
-            this.button6.Location = new System.Drawing.Point(0, 195);
+            this.button6.Location = new System.Drawing.Point(0, 261);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(186, 34);
             this.button6.TabIndex = 11;
@@ -132,7 +135,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Gold;
-            this.panel5.Location = new System.Drawing.Point(3, 164);
+            this.panel5.Location = new System.Drawing.Point(3, 230);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(6, 25);
             this.panel5.TabIndex = 7;
@@ -144,7 +147,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Gold;
-            this.button4.Location = new System.Drawing.Point(0, 160);
+            this.button4.Location = new System.Drawing.Point(0, 226);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(186, 34);
             this.button4.TabIndex = 8;
@@ -155,7 +158,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Gold;
-            this.panel4.Location = new System.Drawing.Point(3, 129);
+            this.panel4.Location = new System.Drawing.Point(3, 195);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(6, 25);
             this.panel4.TabIndex = 4;
@@ -167,7 +170,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Gold;
-            this.button3.Location = new System.Drawing.Point(0, 125);
+            this.button3.Location = new System.Drawing.Point(0, 191);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(186, 34);
             this.button3.TabIndex = 5;
@@ -181,7 +184,7 @@
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(3, 94);
+            this.panel2.Location = new System.Drawing.Point(3, 160);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(6, 25);
             this.panel2.TabIndex = 2;
@@ -217,7 +220,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Gold;
-            this.button1.Location = new System.Drawing.Point(0, 89);
+            this.button1.Location = new System.Drawing.Point(0, 155);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(186, 34);
             this.button1.TabIndex = 2;
@@ -264,6 +267,29 @@
             this.kebab1.Size = new System.Drawing.Size(596, 400);
             this.kebab1.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.ForestGreen;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(10, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(162, 132);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.ForestGreen;
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gold;
+            this.label1.Location = new System.Drawing.Point(406, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(155, 19);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "SHAWARMITA APP ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -271,9 +297,11 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
@@ -282,7 +310,9 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -309,6 +339,8 @@
         private burguers burguers2;
         private Bebida bebida1;
         private Complementos complementos1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
