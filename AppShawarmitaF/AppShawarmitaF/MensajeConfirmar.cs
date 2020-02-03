@@ -24,6 +24,14 @@ namespace AppShawarmitaF
             Ticket b = new Ticket(PagoEnvio.ticket);
             b.Visible = true;
             this.Visible = false;
+
+             
+
+            Form1.principal.Visible = true;
+            Form1.carrito.Clear();
+
+
+
         }
     }
 }

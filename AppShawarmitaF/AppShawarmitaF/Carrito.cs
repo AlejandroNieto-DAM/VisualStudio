@@ -8,10 +8,11 @@ namespace AppShawarmitaF
     public partial class Carrito : Form
     {
 
-        Double totalPrecio;
+        public static Double totalPrecio;
         ArrayList seMuestra;
 
         private String codigoDescuento = "Demonio";
+        private String codigoDescuento2 = "losespetoslomejor34";
 
         public Carrito()
         {
@@ -148,6 +149,20 @@ namespace AppShawarmitaF
                 label6.Visible = true;
                 label2.Text = totalPrecio.ToString() + "€";
             }
+            else if (textBox1.Text.Equals(codigoDescuento2))
+            {
+                totalPrecio = totalPrecio - 100;
+                label6.Text = "Codigo descuento aceptado!";
+                label6.Visible = true;
+                label2.Text = totalPrecio.ToString() + "€";
+            }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Form1.principal.Visible = true;
+            this.Close();
+
         }
     }
 }

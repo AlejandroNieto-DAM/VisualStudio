@@ -122,7 +122,7 @@ namespace AppShawarmitaF
                 
             }
 
-            ticket += "\n\t\t PRECIO A PAGAR --> " + totalPrecio + "€";
+            ticket += "\n\t\t PRECIO A PAGAR --> " + Carrito.totalPrecio +  "€";
             ticket += "\n " + label6.Text + " minutos";
             
 

@@ -77,5 +77,10 @@ namespace AppShawarmitaF
 
             Form1.principal.Visible = false;
         }
+
+        private void Bebida_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

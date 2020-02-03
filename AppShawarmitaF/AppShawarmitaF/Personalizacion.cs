@@ -106,8 +106,7 @@ namespace AppShawarmitaF
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 a = new Form1();
-            a.Visible = true;
+            Form1.principal.Visible = true;
             this.Close();
         }
 
