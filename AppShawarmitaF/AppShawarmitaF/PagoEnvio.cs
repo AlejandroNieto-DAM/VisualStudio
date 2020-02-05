@@ -179,5 +179,12 @@ namespace AppShawarmitaF
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Carrito a = new Carrito();
+            a.Visible = true;
+            this.Close();
+        }
     }
 }

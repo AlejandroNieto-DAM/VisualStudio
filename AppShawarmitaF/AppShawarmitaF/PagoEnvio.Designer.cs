@@ -46,8 +46,8 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.mensajeConfirmar1 = new AppShawarmitaF.MensajeConfirmar();
             this.mensajeError1 = new AppShawarmitaF.MensajeError();
+            this.mensajeConfirmar1 = new AppShawarmitaF.MensajeConfirmar();
             this.SuspendLayout();
             // 
             // button1
@@ -163,6 +163,7 @@
             this.button6.Size = new System.Drawing.Size(103, 66);
             this.button6.TabIndex = 25;
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // textBox3
             // 
@@ -234,6 +235,14 @@
             this.label6.TabIndex = 32;
             this.label6.Text = "Tiempo estimado :";
             // 
+            // mensajeError1
+            // 
+            this.mensajeError1.BackColor = System.Drawing.Color.Red;
+            this.mensajeError1.Location = new System.Drawing.Point(248, 148);
+            this.mensajeError1.Name = "mensajeError1";
+            this.mensajeError1.Size = new System.Drawing.Size(346, 163);
+            this.mensajeError1.TabIndex = 34;
+            // 
             // mensajeConfirmar1
             // 
             this.mensajeConfirmar1.BackColor = System.Drawing.Color.Gold;
@@ -242,14 +251,6 @@
             this.mensajeConfirmar1.Size = new System.Drawing.Size(346, 163);
             this.mensajeConfirmar1.TabIndex = 33;
             this.mensajeConfirmar1.Load += new System.EventHandler(this.mensajeConfirmar1_Load);
-            // 
-            // mensajeError1
-            // 
-            this.mensajeError1.BackColor = System.Drawing.Color.Red;
-            this.mensajeError1.Location = new System.Drawing.Point(248, 148);
-            this.mensajeError1.Name = "mensajeError1";
-            this.mensajeError1.Size = new System.Drawing.Size(346, 163);
-            this.mensajeError1.TabIndex = 34;
             // 
             // PagoEnvio
             // 

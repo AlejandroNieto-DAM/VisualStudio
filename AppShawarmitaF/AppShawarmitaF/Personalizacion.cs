@@ -16,6 +16,7 @@ namespace AppShawarmitaF
 
         Comida seleccionada = new Comida();
         int cantidad = 1;
+        Random random = new Random();
 
         public Personalizacion(Comida comidaSeleccionada)
         {
@@ -34,6 +35,12 @@ namespace AppShawarmitaF
 
         private void Personalizacion_Load(object sender, EventArgs e)
         {
+            int randomNumber = random.Next(0, 100);
+            if(randomNumber >= 50)
+            {
+                pictureBox4.Visible = true;
+            }
+
             label1.Text = seleccionada.getName();
             label5.Text = seleccionada.getPrecio() + "€";
         }
@@ -140,6 +147,11 @@ namespace AppShawarmitaF
             cantidad++;
             textBox1.Text = cantidad.ToString();
             
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
