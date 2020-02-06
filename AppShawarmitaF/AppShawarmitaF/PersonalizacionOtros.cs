@@ -8,22 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace AppShawarmitaF
 {
-    public partial class Personalizacion : Form
+    public partial class PersonalizacionOtros : Form
     {
-
         Comida seleccionada = new Comida();
         int cantidad = 1;
         Random random = new Random();
 
-        public Personalizacion(Comida comidaSeleccionada)
+        public PersonalizacionOtros(Comida comidaSeleccionada)
         {
             InitializeComponent();
 
             pictureBox1.Image = comidaSeleccionada.getImage();
-             
+
             seleccionada.setName(comidaSeleccionada.getName());
             seleccionada.setPrecio(comidaSeleccionada.getPrecio());
             seleccionada.setImage(comidaSeleccionada.getImage());
@@ -35,30 +33,24 @@ namespace AppShawarmitaF
 
         private void Personalizacion_Load(object sender, EventArgs e)
         {
-            int randomNumber = random.Next(0, 100);
-            if(randomNumber >= 50)
-            {
-                pictureBox4.Visible = true;
-            }
-
             label1.Text = seleccionada.getName();
             label5.Text = seleccionada.getPrecio() + "€";
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
 
-            for(int i = 0; i < Int16.Parse(textBox1.Text); i++)
+
+            for (int i = 0; i < Int16.Parse(textBox1.Text); i++)
             {
                 Form1.carrito.Add(seleccionada);
             }
-            
+
             Carrito a = new Carrito();
             a.Visible = true;
             this.Close();
@@ -76,38 +68,38 @@ namespace AppShawarmitaF
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            if(seleccionada.getTomate() == false)
+            if (seleccionada.getGrande() == false)
             {
-                seleccionada.setTomate(true);
+                seleccionada.setGrande(true);
             }
             else
             {
-                seleccionada.setTomate(false);
+                seleccionada.setGrande(false);
             }
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
-           
-            if (seleccionada.getCebolla() == false)
+
+            if (seleccionada.getMediano() == false)
             {
-                seleccionada.setCebolla(true);
+                seleccionada.setMediano(true);
             }
             else
             {
-                seleccionada.setCebolla(false);
+                seleccionada.setMediano(false);
             }
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (seleccionada.getLechuga() == false)
+            if (seleccionada.getPequenio() == false)
             {
-                seleccionada.setLechuga(true);
+                seleccionada.setPequenio(true);
             }
             else
             {
-                seleccionada.setLechuga(false);
+                seleccionada.setPequenio(false);
             }
         }
 
@@ -134,7 +126,7 @@ namespace AppShawarmitaF
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            if(cantidad > 1)
+            if (cantidad > 1)
             {
                 cantidad--;
                 textBox1.Text = cantidad.ToString();
@@ -143,10 +135,10 @@ namespace AppShawarmitaF
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            
+
             cantidad++;
             textBox1.Text = cantidad.ToString();
-            
+
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -175,6 +167,11 @@ namespace AppShawarmitaF
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
         {
 
         }

@@ -27,10 +27,10 @@ namespace AppShawarmitaF
             b1.setPrecio(1.5);
             b1.setImage(pictureBox1.Image);
 
-            Form1.carrito.Add(b1);
-            Carrito a = new Carrito();
-            a.Visible = true;
+            
 
+            PersonalizacionOtros a = new PersonalizacionOtros(b1);
+            a.Visible = true;
             Form1.principal.Visible = false;
 
            
@@ -43,8 +43,8 @@ namespace AppShawarmitaF
             b2.setPrecio(1.8);
             b2.setImage(pictureBox2.Image);
 
-            Form1.carrito.Add(b2);
-            Carrito a = new Carrito();
+           
+            PersonalizacionOtros a = new PersonalizacionOtros(b2);
             a.Visible = true;
 
             Form1.principal.Visible = false;
@@ -57,8 +57,7 @@ namespace AppShawarmitaF
             b3.setPrecio(2);
             b3.setImage(pictureBox3.Image);
 
-            Form1.carrito.Add(b3);
-            Carrito a = new Carrito();
+            PersonalizacionOtros a = new PersonalizacionOtros(b3);
             a.Visible = true;
 
             Form1.principal.Visible = false;
@@ -71,8 +70,7 @@ namespace AppShawarmitaF
             b4.setPrecio(1.7);
             b4.setImage(pictureBox4.Image);
 
-            Form1.carrito.Add(b4);
-            Carrito a = new Carrito();
+            PersonalizacionOtros a = new PersonalizacionOtros(b4);
             a.Visible = true;
 
             Form1.principal.Visible = false;

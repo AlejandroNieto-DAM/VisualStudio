@@ -24,8 +24,7 @@ namespace AppShawarmitaF
             nuggets.setName("Nuggets Demoniacos");
             nuggets.setPrecio(5);
 
-            Form1.carrito.Add(nuggets);
-            Carrito a = new Carrito();
+            PersonalizacionOtros a = new PersonalizacionOtros(nuggets);
             a.Visible = true;
             Form1.principal.Visible = false;
         }
@@ -37,10 +36,11 @@ namespace AppShawarmitaF
             patatasf.setName("Patatas fritas");
             patatasf.setPrecio(3);
 
-            Form1.carrito.Add(patatasf);
-            Form1.principal.Visible = false;
-            Carrito a = new Carrito();
+            PersonalizacionOtros a = new PersonalizacionOtros(patatasf);
             a.Visible = true;
+            Form1.principal.Visible = false;
+
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -50,8 +50,7 @@ namespace AppShawarmitaF
             alitas.setName("Alitas");
             alitas.setPrecio(5);
 
-            Form1.carrito.Add(alitas);
-            Carrito a = new Carrito();
+            PersonalizacionOtros a = new PersonalizacionOtros(alitas);
             a.Visible = true;
             Form1.principal.Visible = false;
         }
@@ -63,10 +62,74 @@ namespace AppShawarmitaF
             patatasd.setName("Patatas Deluxe");
             patatasd.setPrecio(4);
 
-            Form1.carrito.Add(patatasd);
-            Carrito a = new Carrito();
+            PersonalizacionOtros a = new PersonalizacionOtros(patatasd);
             a.Visible = true;
             Form1.principal.Visible = false;
+        }
+
+        private void Complementos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton10_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton11_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton12_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton9_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

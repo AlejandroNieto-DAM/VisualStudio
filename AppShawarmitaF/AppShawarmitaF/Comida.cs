@@ -13,6 +13,11 @@ namespace AppShawarmitaF
         Boolean lechuga;
         Boolean tomate;
         Boolean cebolla;
+
+        Boolean grande;
+        Boolean mediano;
+        Boolean pequenio;
+
         Double precio;
         Image image;
 
@@ -23,6 +28,11 @@ namespace AppShawarmitaF
             lechuga = false;
             tomate = false;
             cebolla = false;
+
+            grande = false;
+            pequenio = false;
+            mediano = false;
+
             precio = 0;
             
         }
@@ -86,6 +96,35 @@ namespace AppShawarmitaF
         public Image getImage()
         {
             return image;
+        }
+
+
+        public void setGrande(Boolean g)
+        {
+            this.grande = g;
+        }
+        public void setMediano(Boolean g)
+        {
+            this.mediano = g;
+        }
+        public void setPequenio(Boolean g)
+        {
+            this.pequenio = g;
+        }
+
+        public Boolean getGrande()
+        {
+            return grande;
+        }
+
+        public Boolean getMediano()
+        {
+            return mediano;
+        }
+
+        public Boolean getPequenio()
+        {
+            return pequenio;
         }
 
         public override bool Equals(object obj)

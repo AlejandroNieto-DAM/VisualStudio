@@ -91,6 +91,21 @@ namespace AppShawarmitaF
                     tomate = "\n\t + Tomate";
                 }
 
+                if (a.getGrande() == true)
+                {
+                    cebolla = "\n\t + Grande";
+                }
+
+                if (a.getPequenio() == true)
+                {
+                    lechuga = "\n\t + Pequeño";
+                }
+
+                if (a.getMediano() == true)
+                {
+                    tomate = "\n\t + Mediano";
+                }
+
                 listView1.Items.Add(a.getName() + lechuga + tomate + cebolla, contador);
 
                 totalPrecio += a.getPrecio();

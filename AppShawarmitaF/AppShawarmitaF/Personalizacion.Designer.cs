@@ -61,6 +61,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // checkBox1
             // 
@@ -134,6 +135,7 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "label";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // label2
             // 
@@ -166,6 +168,7 @@
             this.label4.Size = new System.Drawing.Size(67, 19);
             this.label4.TabIndex = 10;
             this.label4.Text = "Cebolla";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -190,6 +193,7 @@
             this.label6.Size = new System.Drawing.Size(78, 19);
             this.label6.TabIndex = 12;
             this.label6.Text = "Cantidad";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // textBox1
             // 
@@ -231,6 +235,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 16;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox5
             // 
