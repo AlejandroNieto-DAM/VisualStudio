@@ -31,9 +31,10 @@ namespace AppShawarmitaF
 
 
 
-        private void Personalizacion_Load(object sender, EventArgs e)
+        private void PersonalizacionOtros_Load(object sender, EventArgs e)
         {
-            label1.Text = seleccionada.getName();
+
+            label6.Text = seleccionada.getName();
             label5.Text = seleccionada.getPrecio() + "€";
         }
 
