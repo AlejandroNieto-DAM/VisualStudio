@@ -33,7 +33,6 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,6 +44,10 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -60,7 +63,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // checkBox1
             // 
@@ -83,7 +85,6 @@
             this.checkBox2.TabIndex = 3;
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
-            this.checkBox2.Click += new System.EventHandler(this.checkBox2_Click);
             // 
             // checkBox3
             // 
@@ -95,19 +96,6 @@
             this.checkBox3.TabIndex = 4;
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(685, 372);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 66);
-            this.button1.TabIndex = 5;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -134,7 +122,6 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "label";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // label2
             // 
@@ -145,7 +132,6 @@
             this.label2.Size = new System.Drawing.Size(65, 19);
             this.label2.TabIndex = 8;
             this.label2.Text = "Tomate";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -156,7 +142,6 @@
             this.label3.Size = new System.Drawing.Size(76, 19);
             this.label3.TabIndex = 9;
             this.label3.Text = "Lechuga";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -167,7 +152,6 @@
             this.label4.Size = new System.Drawing.Size(67, 19);
             this.label4.TabIndex = 10;
             this.label4.Text = "Cebolla";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -181,7 +165,6 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "label";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // textBox1
             // 
@@ -192,7 +175,6 @@
             this.textBox1.Size = new System.Drawing.Size(28, 26);
             this.textBox1.TabIndex = 13;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // pictureBox2
             // 
@@ -223,7 +205,6 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 16;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox5
             // 
@@ -234,7 +215,54 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 17;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.Gold;
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Teal;
+            this.label6.Location = new System.Drawing.Point(533, 311);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(215, 36);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Añadir";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.Click += new System.EventHandler(this.label6_Click_1);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(148, 395);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(57, 19);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Volver";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(645, 372);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 66);
+            this.button1.TabIndex = 23;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(581, 395);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 19);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "Carrito";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // Personalizacion
             // 
@@ -242,6 +270,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -253,7 +285,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
@@ -278,7 +309,6 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -290,5 +320,9 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label7;
     }
 }

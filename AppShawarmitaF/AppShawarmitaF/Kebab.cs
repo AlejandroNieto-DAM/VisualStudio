@@ -51,6 +51,7 @@ namespace AppShawarmitaF
 
                     Personalizacion a = new Personalizacion(aux);
                     a.Visible = true;
+                    Form1.principal.Visible = false;
                 }
             }
         }

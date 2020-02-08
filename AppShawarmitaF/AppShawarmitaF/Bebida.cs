@@ -53,7 +53,7 @@ namespace AppShawarmitaF
         private void button3_Click(object sender, EventArgs e)
         {
             Comida b3 = new Comida();
-            b3.setName("Fanta");
+            b3.setName("Aquarius");
             b3.setPrecio(2);
             b3.setImage(pictureBox3.Image);
 
@@ -66,7 +66,7 @@ namespace AppShawarmitaF
         private void button4_Click(object sender, EventArgs e)
         {
             Comida b4 = new Comida();
-            b4.setName("Aquarius");
+            b4.setName("Fanta");
             b4.setPrecio(1.7);
             b4.setImage(pictureBox4.Image);
 

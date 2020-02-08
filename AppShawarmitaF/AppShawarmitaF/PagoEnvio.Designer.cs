@@ -46,6 +46,8 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.mensajeError1 = new AppShawarmitaF.MensajeError();
             this.mensajeConfirmar1 = new AppShawarmitaF.MensajeConfirmar();
             this.SuspendLayout();
@@ -235,6 +237,26 @@
             this.label6.TabIndex = 32;
             this.label6.Text = "Tiempo estimado :";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(170, 386);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(82, 19);
+            this.label7.TabIndex = 35;
+            this.label7.Text = "CARRITO";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(568, 386);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(92, 19);
+            this.label8.TabIndex = 36;
+            this.label8.Text = "FINALIZAR";
+            // 
             // mensajeError1
             // 
             this.mensajeError1.BackColor = System.Drawing.Color.Red;
@@ -258,6 +280,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.mensajeError1);
             this.Controls.Add(this.mensajeConfirmar1);
             this.Controls.Add(this.label6);
@@ -307,5 +331,7 @@
         private System.Windows.Forms.Label label6;
         private MensajeConfirmar mensajeConfirmar1;
         private MensajeError mensajeError1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }

@@ -17,7 +17,7 @@ namespace AppShawarmitaF
         Comida seleccionada = new Comida();
         int cantidad = 1;
         Random random = new Random();
-
+        Boolean aniadido = false;
         public Personalizacion(Comida comidaSeleccionada)
         {
             InitializeComponent();
@@ -53,15 +53,18 @@ namespace AppShawarmitaF
         private void button1_Click(object sender, EventArgs e)
         {
             
+            if (aniadido == false) { 
 
-            for(int i = 0; i < Int16.Parse(textBox1.Text); i++)
-            {
-                Form1.carrito.Add(seleccionada);
-            }
+                for(int i = 0; i < Int16.Parse(textBox1.Text); i++)
+                {
+                    Form1.carrito.Add(seleccionada);
+                }
             
-            Carrito a = new Carrito();
-            a.Visible = true;
-            this.Close();
+                Carrito a = new Carrito();
+                a.Visible = true;
+                this.Close();
+            }
+  
         }
 
         private void checkBox2_Click(object sender, EventArgs e)
@@ -175,6 +178,35 @@ namespace AppShawarmitaF
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click_1(object sender, EventArgs e)
+        {
+            if (aniadido == false)
+            {
+
+                for (int i = 0; i < Int16.Parse(textBox1.Text); i++)
+                {
+                    Form1.carrito.Add(seleccionada);
+                }
+
+                Form1.principal.Visible = true;
+                this.Close();
+
+                aniadido = true;
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Carrito a = new Carrito();
+            a.Visible = true;
+            this.Close();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
         {
 
         }

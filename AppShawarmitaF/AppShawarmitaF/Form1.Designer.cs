@@ -51,6 +51,8 @@
             this.kebab1 = new AppShawarmitaF.Kebab();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -70,6 +72,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.ForestGreen;
+            this.panel1.Controls.Add(this.panel10);
+            this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.panel9);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.panel8);
@@ -290,6 +294,29 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "SHAWARMITA APP ";
             // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Gold;
+            this.panel10.Location = new System.Drawing.Point(3, 300);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(6, 25);
+            this.panel10.TabIndex = 15;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Black;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.Gold;
+            this.button5.Location = new System.Drawing.Point(0, 296);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(186, 34);
+            this.button5.TabIndex = 16;
+            this.button5.Text = "Carrito";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -341,6 +368,8 @@
         private Complementos complementos1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Button button5;
     }
 }
 

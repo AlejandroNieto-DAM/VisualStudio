@@ -113,5 +113,12 @@ namespace AppShawarmitaF
         {
             complementos1.BringToFront();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Carrito a = new Carrito();
+            this.Visible = false;
+            a.Visible = true;
+        }
     }
 }

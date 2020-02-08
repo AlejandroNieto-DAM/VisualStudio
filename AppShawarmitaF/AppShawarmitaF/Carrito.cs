@@ -122,9 +122,18 @@ namespace AppShawarmitaF
 
         private void button1_Click(object sender, EventArgs e)
         {
-            PagoEnvio a = new PagoEnvio();
-            a.Visible = true;
-            this.Close();
+
+            Console.WriteLine("Numero total de cosas en el array --> " + Form1.carrito.Count);
+            if (Form1.carrito.Count != 0)
+            {
+                PagoEnvio a = new PagoEnvio();
+                a.Visible = true;
+                this.Close();
+            }
+            else
+            {
+                label9.Visible = true;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -148,7 +157,6 @@ namespace AppShawarmitaF
             }
             catch (ArgumentOutOfRangeException ex)
             {
-                Console.WriteLine(ex);
                 label3.Text = "Debes seleccionar un producto para eliminarlo.";
                 label3.Visible = true;
             }
@@ -158,22 +166,24 @@ namespace AppShawarmitaF
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Equals(codigoDescuento) && totalPrecio > 15 && codigoUsado1 == false)
-            {
-                totalPrecio = totalPrecio - 5;
-                label6.Text = "Codigo descuento aceptado!";
-                label6.Visible = true;
-                label2.Text = totalPrecio.ToString() + "€";
+            
+                if (textBox1.Text.Equals(codigoDescuento) && totalPrecio > 15 && codigoUsado1 == false)
+                {
+                    totalPrecio = totalPrecio - 5;
+                    label6.Text = "Codigo descuento aceptado!";
+                    label6.Visible = true;
+                    label2.Text = totalPrecio.ToString() + "€";
 
-                codigoUsado1 = true;
-            }
-            else if (textBox1.Text.Equals(codigoDescuento2))
-            {
-                totalPrecio = totalPrecio - 100;
-                label6.Text = "Codigo descuento aceptado!";
-                label6.Visible = true;
-                label2.Text = totalPrecio.ToString() + "€";
-            }
+                    codigoUsado1 = true;
+                }
+                else if (textBox1.Text.Equals(codigoDescuento2))
+                {
+                    totalPrecio = totalPrecio - 100;
+                    label6.Text = "Codigo descuento aceptado!";
+                    label6.Visible = true;
+                    label2.Text = totalPrecio.ToString() + "€";
+                }
+           
         }
 
         private void button2_Click_1(object sender, EventArgs e)
