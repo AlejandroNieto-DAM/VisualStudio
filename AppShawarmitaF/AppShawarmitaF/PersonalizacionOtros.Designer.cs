@@ -176,6 +176,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
+            this.radioButton2.Checked = true;
             this.radioButton2.Image = ((System.Drawing.Image)(resources.GetObject("radioButton2.Image")));
             this.radioButton2.Location = new System.Drawing.Point(502, 143);
             this.radioButton2.Name = "radioButton2";
