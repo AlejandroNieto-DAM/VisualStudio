@@ -10,6 +10,7 @@ namespace AppShawarmitaF
 
         public static Double totalPrecio;
         ArrayList seMuestra;
+        Boolean codigoUsado1 = false;
 
         private String codigoDescuento = "Demonio";
         private String codigoDescuento2 = "losespetoslomejor34";
@@ -157,12 +158,14 @@ namespace AppShawarmitaF
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Equals(codigoDescuento) && totalPrecio > 15)
+            if (textBox1.Text.Equals(codigoDescuento) && totalPrecio > 15 && codigoUsado1 == false)
             {
                 totalPrecio = totalPrecio - 5;
                 label6.Text = "Codigo descuento aceptado!";
                 label6.Visible = true;
                 label2.Text = totalPrecio.ToString() + "€";
+
+                codigoUsado1 = true;
             }
             else if (textBox1.Text.Equals(codigoDescuento2))
             {

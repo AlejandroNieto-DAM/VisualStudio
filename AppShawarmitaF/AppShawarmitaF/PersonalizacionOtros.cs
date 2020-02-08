@@ -94,14 +94,7 @@ namespace AppShawarmitaF
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (seleccionada.getPequenio() == false)
-            {
-                seleccionada.setPequenio(true);
-            }
-            else
-            {
-                seleccionada.setPequenio(false);
-            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -175,6 +168,34 @@ namespace AppShawarmitaF
         private void label2_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            
+            
+                seleccionada.setPequenio(true);
+                seleccionada.setGrande(false);
+                seleccionada.setMediano(false);
+            
+           
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+           
+            
+                seleccionada.setPequenio(false);
+                seleccionada.setGrande(false);
+                seleccionada.setMediano(true);
+           
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            seleccionada.setPequenio(false);
+            seleccionada.setGrande(true);
+            seleccionada.setMediano(false);
         }
     }
 }
