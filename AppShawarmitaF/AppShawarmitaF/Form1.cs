@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace AppShawarmitaF
 {
@@ -119,6 +120,11 @@ namespace AppShawarmitaF
             Carrito a = new Carrito();
             this.Visible = false;
             a.Visible = true;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
