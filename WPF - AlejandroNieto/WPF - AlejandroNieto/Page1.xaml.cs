@@ -28,7 +28,7 @@ namespace WPF___AlejandroNieto
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             // View Expense Report
-            Page2 expenseReportPage = new Page2();
+            Page2 expenseReportPage = new Page2(this.peopleListBox.SelectedItem);
             this.NavigationService.Navigate(expenseReportPage);
         }
     }

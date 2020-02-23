@@ -24,5 +24,12 @@ namespace WPF___AlejandroNieto
         {
             InitializeComponent();
         }
+
+        // Custom constructor to pass expense report data
+        public Page2(object data) : this()
+        {
+            // Bind to expense report data.
+            this.DataContext = data;
+        }
     }
 }
