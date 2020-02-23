@@ -15,22 +15,22 @@
                 <x:XData>
                     <Expenses xmlns="">
                         <Person Name="Mike" Department="Legal">
-                            <Expense ExpenseType="Lunch" ExpenseAmount="50" />
-                            <Expense ExpenseType="Transportation" ExpenseAmount="50" />
+                            <Expense ExpenseType="Comida" ExpenseAmount="50" />
+                            <Expense ExpenseType="Transporte" ExpenseAmount="50" />
                         </Person>
                         <Person Name="Lisa" Department="Marketing">
-                            <Expense ExpenseType="Document printing"
+                            <Expense ExpenseType="Impresion de documentos"
           ExpenseAmount="50"/>
-                            <Expense ExpenseType="Gift" ExpenseAmount="125" />
+                            <Expense ExpenseType="Regalo" ExpenseAmount="125" />
                         </Person>
-                        <Person Name="John" Department="Engineering">
-                            <Expense ExpenseType="Magazine subscription" 
+                        <Person Name="John" Department="Ingenieria">
+                            <Expense ExpenseType="Suscripcion a revista" 
          ExpenseAmount="50"/>
-                            <Expense ExpenseType="New machine" ExpenseAmount="600" />
+                            <Expense ExpenseType="Nueva maquina" ExpenseAmount="600" />
                             <Expense ExpenseType="Software" ExpenseAmount="500" />
                         </Person>
-                        <Person Name="Mary" Department="Finance">
-                            <Expense ExpenseType="Dinner" ExpenseAmount="100" />
+                        <Person Name="Mary" Department="Financias">
+                            <Expense ExpenseType="Cena" ExpenseAmount="100" />
                         </Person>
                     </Expenses>
                 </x:XData>
@@ -61,11 +61,12 @@
         <!-- People list -->
 
         <Label Grid.Column="1" Style="{StaticResource headerTextStyle}" >
-            View Expense Report
+            Vista Reportes de Gastos
+            
         </Label>
 
         <Border Grid.Column="1" Grid.Row="1" Style="{StaticResource listHeaderStyle}">
-            <Label Style="{StaticResource listHeaderTextStyle}">Names</Label>
+            <Label Style="{StaticResource listHeaderTextStyle}">Nombres</Label>
         </Border>
         <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2" 
          ItemsSource="{Binding Source={StaticResource ExpenseDataSource}, XPath=Person}"

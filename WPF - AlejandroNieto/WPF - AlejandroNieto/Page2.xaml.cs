@@ -31,5 +31,10 @@ namespace WPF___AlejandroNieto
             // Bind to expense report data.
             this.DataContext = data;
         }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
