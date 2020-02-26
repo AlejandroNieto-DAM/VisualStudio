@@ -18,14 +18,15 @@
         </Grid.RowDefinitions>
         <StackPanel>
             <TextBox Text="Centígrados" TextAlignment="Center" IsEnabled="False"/>
-            <TextBox Width="200" MaxLength="100" />
+            <TextBox Width="200" MaxLength="100" Name="Centi"/>
         </StackPanel>
-        
+
         <StackPanel Grid.Column="1">
             <TextBox Text="Fahrenheit" TextAlignment="Center" IsEnabled="False"/>
-            <TextBox Width="200" MaxLength="100" />
+            <TextBox Name="Faren" Width="200" MaxLength="100"/>
         </StackPanel>
-        
-        
+        <Button Content="Button" HorizontalAlignment="Left" Margin="350,98,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Click="Button_Click"/>
+
+
     </Grid>
 </Window>

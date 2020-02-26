@@ -24,5 +24,29 @@ namespace WPFConversor
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            String centi = Centi.Text;
+            String faren = Faren.Text;
+
+            if(centi != "" || faren != "")
+            {
+                if(centi != "")
+                {
+                    int fareng = (Int16.Parse(centi) * 9 / 5) + 32;
+                    Faren.Text = fareng.ToString();
+                    Centi.Text = "";
+                }
+                else
+                {
+                    int centig = ((Int16.Parse(faren) - 32)  *  5/9);
+                    Centi.Text = centig.ToString();
+                    Faren.Text = "";
+                }
+            }
+        }
+
+
     }
 }
